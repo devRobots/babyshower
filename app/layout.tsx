@@ -1,16 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -23,11 +12,19 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="es">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className="flex flex-col w-full items-center gap-6 md:gap-8 py-4 md:py-8 px-4 md:px-64"
+        style={{ color: "black", backgroundColor: "#f8f6f6" }}
       >
-        {children}
+        <main className="flex flex-col w-full gap-3 md:gap-6">
+          {children}
+        </main>
+        <hr className="w-full" style={{ color: "#efd4db" }} />
+        <footer className="flex flex-col w-full items-center text-black/60">
+          <small>¡Gracias por celebrar con nosotros!</small>
+          <small>Con amor, Sayreth & Francisco</small>
+        </footer>
       </body>
     </html>
   );
