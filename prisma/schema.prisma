@@ -1,0 +1,32 @@
+// /prisma/schema.prisma
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Guest {
+  id           String    @id @default(cuid())
+  name         String
+  email        String    @unique
+  isAttending  Boolean
+  message      String?
+  reservedGift GiftItem?
+}
+
+model GiftItem {
+  id           String   @id @default(cuid())
+  name         String
+  description  String
+  image        String
+  link         String
+  price        Float?   
+
+  isReserved   Boolean  @default(false)
+  reservedById String?  @unique
+  reservedBy   Guest?   @relation(fields: [reservedById], references: [id])
+}
