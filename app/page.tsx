@@ -1,6 +1,6 @@
-import GiftList from "@/frontend/components/GiftList";
-import Hero from "@/frontend/components/Hero";
-import Info from "@/frontend/components/Info";
+import GiftList from "@components/GiftList";
+import Hero from "@components/Hero";
+import Info from "@components/Info";
 
 export default function Home() {
   return (

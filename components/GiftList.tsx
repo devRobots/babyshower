@@ -1,4 +1,4 @@
-import GiftItem from "./GiftItem";
+import GiftItem from "@components/GiftItem";
 
 export default function GiftList() {
   return (

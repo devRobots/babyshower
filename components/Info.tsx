@@ -1,4 +1,4 @@
-import InfoItem from "./InfoItem";
+import InfoItem from "@components/InfoItem";
 
 export default function Info() {
   return (
