@@ -4,7 +4,7 @@ import Info from "@components/landing/Info";
 
 export default function Home() {
   return (
-    <main className="flex flex-col w-full gap-3 md:gap-6">
+    <main className="landing">
       <Hero />
       <Info />
       <GiftList />

@@ -11,9 +11,9 @@ interface InfoItemProps {
 export default function InfoItem(props: InfoItemProps) {
   const { icon, body, desc, className, children } = props;
   return (
-    <article className={`flex flex-col border bg-white border-secondary rounded-3xl justify-center p-4 gap-2 ${className ? className : ""}`}>
+    <article className={`info-item ${className}`}>
       {children ? children : null}
-      <section className="flex flex-row gap-4 items-center">
+      <section>
         <Icon icon={icon} className="text-primary" width={32} />
         <div className="flex flex-col">
           <strong className="text-balance">{body}</strong>

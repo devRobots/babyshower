@@ -12,18 +12,21 @@ export default function GiftItem(props: GiftItemProps) {
   const { name, description, image } = props;
 
   return (
-    <article className="flex flex-col bg-white rounded-2xl shadow-sm">
-      <Image src={image} alt={name} className="aspect-square bg-gray-400 rounded-t-2xl" width={256} height={256} unoptimized />
-      <main className="flex flex-col gap-2 p-4 justify-between flex-1">
-        <div className="flex flex-col gap-1">
+    <article className="gift-item">
+      <Image
+        src={image} alt={name}
+        className="gift-image"
+        width={256} height={256}
+        unoptimized />
+      <main>
+        <div>
           <h3 className="font-semibold text-pretty">{name}</h3>
           <p className="text-pretty text-black/60">{description}</p>
         </div>
-        <a href="/rsvp" className="w-full rounded-full px-4 py-2 font-bold text-sm text-primary bg-secondary text-center">
+        <a href="/rsvp" className="button-secondary">
           Elegir este regalo
         </a>
       </main>
-
     </article>
   );
 }
