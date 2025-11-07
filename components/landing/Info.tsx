@@ -1,4 +1,4 @@
-import InfoItem from "@components/InfoItem";
+import InfoItem from "@components/landing/InfoItem";
 import { getConfig } from "@lib/config";
 
 export default function Info() {

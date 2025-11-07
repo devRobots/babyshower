@@ -1,4 +1,4 @@
-import GiftItem from "@components/GiftItem";
+import GiftItem from "@components/landing/GiftItem";
 import prisma from '@lib/prisma';
 
 

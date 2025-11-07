@@ -1,6 +1,6 @@
-import GiftList from "@components/GiftList";
-import Hero from "@components/Hero";
-import Info from "@components/Info";
+import GiftList from "@components/landing/GiftList";
+import Hero from "@components/landing/Hero";
+import Info from "@components/landing/Info";
 
 export default function Home() {
   return (
