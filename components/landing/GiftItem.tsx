@@ -19,7 +19,7 @@ export default function GiftItem(props: GiftItemProps) {
           <h3 className="font-semibold text-pretty">{name}</h3>
           <p className="text-pretty text-black/60">{description}</p>
         </div>
-        <a href="/rsvp" className="w-full rounded-full px-4 py-2 font-bold text-sm text-[#d55873] text-center" style={{ backgroundColor: "#efd4db" }}>
+        <a href="/rsvp" className="w-full rounded-full px-4 py-2 font-bold text-sm text-primary bg-secondary text-center">
           Elegir este regalo
         </a>
       </main>

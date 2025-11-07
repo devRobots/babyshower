@@ -11,7 +11,7 @@ export default function Hero() {
         Estás Invitado al Baby Shower de {mom} & {dad}
       </h1>
       <span>¡Celebrando la futura llegada de su pequeño!</span>
-      <a href="/rsvp" className="rounded-full px-4 py-3 font-bold text-sm w-48" style={{ backgroundColor: "#d55873" }}>Confirmar Asistencia</a>
+      <a href="/rsvp" className="rounded-full px-4 py-3 font-bold text-sm w-48 bg-primary">Confirmar Asistencia</a>
     </section>
   );
 }

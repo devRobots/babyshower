@@ -12,7 +12,7 @@ export default function Info() {
         <InfoItem icon="iconamoon:clock-duotone" body={time} desc="Hora del Evento" className="w-1/2 md:w-full md:h-1/2" />
       </div>
       <InfoItem icon="duo-icons:location" body={location.address} desc="Ubicacion" className="md:w-2/3">
-        <iframe src={location.googleMapsUrl} width="100%" height="200" style={{ border: 0 }} loading="lazy" />
+        <iframe src={location.googleMapsUrl} className="w-full h-[200px] border-0" loading="lazy" />
       </InfoItem>
     </section>
   );

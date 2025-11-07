@@ -25,10 +25,9 @@ export default function RootLayout({
     <html lang="es">
       <body
         className="flex flex-col w-full items-center gap-6 md:gap-8 py-4 md:py-8 px-4 md:px-16 lg:px-64"
-        style={{ color: "black", backgroundColor: "#f8f6f6" }}
       >
         {children}
-        <hr className="w-full" style={{ color: "#efd4db" }} />
+        <hr className="w-full text-secondary"  />
         <Footer />
       </body>
     </html>
