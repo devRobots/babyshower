@@ -4,14 +4,22 @@ import prisma from '@lib/prisma';
 
 async function getGifts() {
   const gifts = await prisma.giftItem.findMany({
-    where: {
-      isReserved: false,
+    include: {
+      _count: {
+        select: { reservations: true },
+      },
     },
-    orderBy: {
-      price: 'asc',
-    },
+    orderBy: [
+      { priority: 'desc' },
+      { name: 'asc' }
+    ]
   });
-  return gifts;
+  
+  const availableGifts = gifts.filter(gift => {
+    return gift._count.reservations < gift.stock;
+  });
+
+  return availableGifts;
 }
 
 export default async function GiftList() {

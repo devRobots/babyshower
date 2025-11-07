@@ -13,18 +13,30 @@ model Guest {
   email        String    @unique
   isAttending  Boolean
   message      String?
-  reservedGift GiftItem?
+
+  reservation  Reservation?
 }
 
 model GiftItem {
   id           String   @id @default(cuid())
   name         String
-  description  String
-  image        String
-  link         String
-  price        Float?   
+  description  String?
+  link         String?
+  image        String?
+  
+  stock        Int      @default(1)
+  priority     Int      @default(0)
+  
+  reservations Reservation[]
+}
 
-  isReserved   Boolean  @default(false)
-  reservedById String?  @unique
-  reservedBy   Guest?   @relation(fields: [reservedById], references: [id])
+model Reservation {
+  id        String   @id @default(cuid())
+  createdAt DateTime @default(now())
+
+  guestId   String   @unique
+  guest     Guest    @relation(fields: [guestId], references: [id])
+
+  giftId    String
+  gift      GiftItem @relation(fields: [giftId], references: [id])
 }

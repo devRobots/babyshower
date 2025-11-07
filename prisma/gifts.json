@@ -1,16 +1,110 @@
 [
-    {
-        "name": "Pañalero (Set de 5)",
-        "description": "De algodón suave, 0-3 meses.",
-        "price": 450.0,
-        "link": "https://www.amazon.com/...",
-        "image": "https://url-de-tu-imagen.com/panalero.jpg"
-    },
-    {
-        "name": "Monitor de Bebé",
-        "description": "Con cámara y audio.",
-        "price": 2100.50,
-        "link": "https://www.amazon.com/...",
-        "image": "https://url-de-tu-imagen.com/monitor.jpg"
-    }
+  {
+    "id": "fa8b84ad-7f1b-43e2-ad83-e9e33174099b",
+    "name": "Aged White Cheddar Popcorn",
+    "description": "Light and fluffy popcorn coated in aged white cheddar.",
+    "link": "http://blogger.com/nullam/sit/amet/turpis.json?facilisi=vulputate&cras=elementum&non=nullam&velit=varius&nec=nulla&nisi=facilisi&vulputate=cras&nonummy=non&maecenas=velit&tincidunt=nec&lacus=nisi&at=vulputate&velit=nonummy&vivamus=maecenas&vel=tincidunt&nulla=lacus&eget=at&eros=velit&elementum=vivamus&pellentesque=vel&quisque=nulla&porta=eget&volutpat=eros&erat=elementum&quisque=pellentesque&erat=quisque&eros=porta&viverra=volutpat&eget=erat&congue=quisque&eget=erat&semper=eros&rutrum=viverra&nulla=eget&nunc=congue&purus=eget&phasellus=semper&in=rutrum&felis=nulla&donec=nunc&semper=purus&sapien=phasellus&a=in&libero=felis&nam=donec&dui=semper&proin=sapien&leo=a&odio=libero&porttitor=nam&id=dui&consequat=proin&in=leo&consequat=odio&ut=porttitor&nulla=id&sed=consequat&accumsan=in&felis=consequat&ut=ut&at=nulla&dolor=sed&quis=accumsan",
+    "image": "http://dummyimage.com/x.png/dddddd/000000",
+    "stock": 1,
+    "priority": 9
+  },
+  {
+    "id": "8ee700b2-b64b-4920-b32d-aa1ff6c6534b",
+    "name": "Honey",
+    "description": "Pure and natural honey, great for sweetening.",
+    "link": "http://wsj.com/vestibulum/proin/eu/mi/nulla.html?aliquam=pellentesque&quis=ultrices&turpis=mattis&eget=odio&elit=donec&sodales=vitae&scelerisque=nisi&mauris=nam&sit=ultrices&amet=libero&eros=non&suspendisse=mattis&accumsan=pulvinar&tortor=nulla&quis=pede&turpis=ullamcorper&sed=augue&ante=a&vivamus=suscipit&tortor=nulla&duis=elit&mattis=ac&egestas=nulla&metus=sed&aenean=vel&fermentum=enim&donec=sit&ut=amet",
+    "image": "http://dummyimage.com/x.png/dddddd/000000",
+    "stock": 2,
+    "priority": 0
+  },
+  {
+    "id": "008644d6-8686-4012-a46e-206616d3e1e8",
+    "name": "Freestanding Wine Rack",
+    "description": "Stylish wine rack to store and display bottles.",
+    "link": "https://si.edu/rutrum/neque/aenean/auctor/gravida/sem/praesent.xml?ut=erat&rhoncus=id&aliquet=mauris",
+    "image": "http://dummyimage.com/x.png/ff4444/ffffff",
+    "stock": 5,
+    "priority": 4
+  },
+  {
+    "id": "5a14572e-47b6-458d-8908-c1ac426c8048",
+    "name": "Soft Plush Throw Blanket",
+    "description": "Cozy throw blanket perfect for chilly evenings.",
+    "link": "https://sfgate.com/ligula/in/lacus/curabitur/at/ipsum/ac.js?in=vestibulum&sapien=aliquet&iaculis=ultrices&congue=erat&vivamus=tortor&metus=sollicitudin&arcu=mi&adipiscing=sit&molestie=amet&hendrerit=lobortis&at=sapien&vulputate=sapien&vitae=non&nisl=mi",
+    "image": "http://dummyimage.com/x.png/5fa2dd/ffffff",
+    "stock": 3,
+    "priority": 5
+  },
+  {
+    "id": "56ec547c-1094-4c94-8209-d4ead58d23d0",
+    "name": "Herbed Chicken Breast",
+    "description": "Marinated chicken breast seasoned with herbs, ready for grilling.",
+    "link": "https://elegantthemes.com/commodo/vulputate/justo.html?diam=in&erat=quis&fermentum=justo&justo=maecenas&nec=rhoncus&condimentum=aliquam&neque=lacus&sapien=morbi&placerat=quis&ante=tortor&nulla=id&justo=nulla&aliquam=ultrices&quis=aliquet&turpis=maecenas&eget=leo&elit=odio&sodales=condimentum&scelerisque=id&mauris=luctus&sit=nec&amet=molestie&eros=sed&suspendisse=justo&accumsan=pellentesque&tortor=viverra&quis=pede&turpis=ac&sed=diam&ante=cras&vivamus=pellentesque&tortor=volutpat&duis=dui&mattis=maecenas&egestas=tristique&metus=est&aenean=et&fermentum=tempus&donec=semper&ut=est&mauris=quam&eget=pharetra&massa=magna&tempor=ac&convallis=consequat&nulla=metus&neque=sapien&libero=ut&convallis=nunc&eget=vestibulum&eleifend=ante&luctus=ipsum&ultricies=primis&eu=in",
+    "image": "http://dummyimage.com/x.png/dddddd/000000",
+    "stock": 2,
+    "priority": 2
+  },
+  {
+    "id": "6a7b3b0d-f500-420d-ba07-b25794b33f37",
+    "name": "Snap-On Tupperware Set",
+    "description": "Durable and versatile food storage containers.",
+    "link": "https://flickr.com/pulvinar/lobortis/est/phasellus/sit.png?eget=molestie&vulputate=lorem&ut=quisque&ultrices=ut&vel=erat&augue=curabitur&vestibulum=gravida&ante=nisi&ipsum=at&primis=nibh&in=in&faucibus=hac&orci=habitasse&luctus=platea&et=dictumst&ultrices=aliquam&posuere=augue&cubilia=quam&curae=sollicitudin&donec=vitae&pharetra=consectetuer&magna=eget&vestibulum=rutrum&aliquet=at&ultrices=lorem&erat=integer&tortor=tincidunt&sollicitudin=ante&mi=vel&sit=ipsum&amet=praesent&lobortis=blandit&sapien=lacinia&sapien=erat&non=vestibulum&mi=sed&integer=magna&ac=at&neque=nunc&duis=commodo&bibendum=placerat&morbi=praesent&non=blandit",
+    "image": "http://dummyimage.com/x.png/ff4444/ffffff",
+    "stock": 4,
+    "priority": 0
+  },
+  {
+    "id": "872106e8-daaf-4494-84a1-fa0efdce1d25",
+    "name": "Personalized Pet ID Tags",
+    "description": "Custom engraved ID tags for pets with your contact information.",
+    "link": "http://printfriendly.com/odio.png?semper=blandit&porta=ultrices&volutpat=enim&quam=lorem&pede=ipsum&lobortis=dolor&ligula=sit&sit=amet&amet=consectetuer&eleifend=adipiscing&pede=elit&libero=proin&quis=interdum&orci=mauris&nullam=non&molestie=ligula&nibh=pellentesque&in=ultrices&lectus=phasellus&pellentesque=id&at=sapien&nulla=in&suspendisse=sapien&potenti=iaculis&cras=congue&in=vivamus&purus=metus&eu=arcu&magna=adipiscing&vulputate=molestie&luctus=hendrerit&cum=at&sociis=vulputate&natoque=vitae&penatibus=nisl&et=aenean&magnis=lectus&dis=pellentesque&parturient=eget&montes=nunc&nascetur=donec&ridiculus=quis&mus=orci&vivamus=eget&vestibulum=orci&sagittis=vehicula&sapien=condimentum&cum=curabitur&sociis=in&natoque=libero&penatibus=ut&et=massa&magnis=volutpat&dis=convallis&parturient=morbi&montes=odio&nascetur=odio&ridiculus=elementum&mus=eu&etiam=interdum&vel=eu&augue=tincidunt&vestibulum=in&rutrum=leo&rutrum=maecenas&neque=pulvinar&aenean=lobortis&auctor=est&gravida=phasellus&sem=sit&praesent=amet&id=erat&massa=nulla&id=tempus&nisl=vivamus&venenatis=in&lacinia=felis&aenean=eu&sit=sapien&amet=cursus&justo=vestibulum&morbi=proin&ut=eu&odio=mi&cras=nulla&mi=ac&pede=enim",
+    "image": "http://dummyimage.com/x.png/5fa2dd/ffffff",
+    "stock": 3,
+    "priority": 10
+  },
+  {
+    "id": "323db8a4-8ce9-4e52-af04-290e66fce4a2",
+    "name": "Belted Trench Coat",
+    "description": "Timeless belted trench coat for a polished look during fall.",
+    "link": "http://squarespace.com/maecenas/pulvinar/lobortis/est/phasellus/sit.xml?facilisi=phasellus&cras=sit&non=amet&velit=erat&nec=nulla&nisi=tempus&vulputate=vivamus&nonummy=in&maecenas=felis&tincidunt=eu&lacus=sapien&at=cursus&velit=vestibulum&vivamus=proin&vel=eu&nulla=mi&eget=nulla&eros=ac&elementum=enim&pellentesque=in&quisque=tempor&porta=turpis&volutpat=nec&erat=euismod",
+    "image": "http://dummyimage.com/x.png/5fa2dd/ffffff",
+    "stock": 3,
+    "priority": 10
+  },
+  {
+    "id": "b83a1b64-7590-4b34-a3b0-8629c959dc7b",
+    "name": "Classic Chicken Noodle Soup",
+    "description": "A comforting soup filled with chicken and noodles in broth.",
+    "link": "https://sogou.com/lacus/morbi/quis/tortor/id.html?nisi=molestie&venenatis=hendrerit&tristique=at&fusce=vulputate&congue=vitae&diam=nisl&id=aenean&ornare=lectus&imperdiet=pellentesque&sapien=eget&urna=nunc&pretium=donec&nisl=quis&ut=orci&volutpat=eget&sapien=orci&arcu=vehicula&sed=condimentum&augue=curabitur&aliquam=in&erat=libero&volutpat=ut&in=massa&congue=volutpat&etiam=convallis&justo=morbi&etiam=odio&pretium=odio&iaculis=elementum&justo=eu&in=interdum&hac=eu&habitasse=tincidunt&platea=in&dictumst=leo&etiam=maecenas&faucibus=pulvinar&cursus=lobortis&urna=est&ut=phasellus&tellus=sit&nulla=amet&ut=erat&erat=nulla&id=tempus&mauris=vivamus&vulputate=in&elementum=felis&nullam=eu&varius=sapien&nulla=cursus&facilisi=vestibulum&cras=proin&non=eu&velit=mi&nec=nulla&nisi=ac&vulputate=enim&nonummy=in&maecenas=tempor&tincidunt=turpis&lacus=nec&at=euismod&velit=scelerisque&vivamus=quam&vel=turpis&nulla=adipiscing&eget=lorem&eros=vitae&elementum=mattis&pellentesque=nibh&quisque=ligula&porta=nec&volutpat=sem&erat=duis&quisque=aliquam&erat=convallis&eros=nunc&viverra=proin&eget=at&congue=turpis&eget=a&semper=pede&rutrum=posuere&nulla=nonummy&nunc=integer",
+    "image": "http://dummyimage.com/x.png/cc0000/ffffff",
+    "stock": 5,
+    "priority": 1
+  },
+  {
+    "id": "c1e940c8-99c2-410c-a353-ea3058d46e7f",
+    "name": "Cilantro Lime Rice",
+    "description": "Easy-to-prepare rice with cilantro and lime flavors, great as a side.",
+    "link": "https://si.edu/odio.png?mauris=turpis&enim=integer&leo=aliquet&rhoncus=massa&sed=id&vestibulum=lobortis&sit=convallis&amet=tortor&cursus=risus&id=dapibus&turpis=augue&integer=vel&aliquet=accumsan&massa=tellus&id=nisi&lobortis=eu&convallis=orci&tortor=mauris&risus=lacinia",
+    "image": "http://dummyimage.com/x.png/dddddd/000000",
+    "stock": 4,
+    "priority": 6
+  },
+  {
+    "id": "c6f53e05-fe0c-403c-b802-10055b2d5f10",
+    "name": "Classic Bagels",
+    "description": "Freshly baked bagels, perfect for breakfast or snacks.",
+    "link": "https://taobao.com/vestibulum/ante/ipsum/primis.json?vel=risus&est=dapibus&donec=augue&odio=vel&justo=accumsan&sollicitudin=tellus&ut=nisi&suscipit=eu&a=orci&feugiat=mauris&et=lacinia&eros=sapien&vestibulum=quis&ac=libero&est=nullam&lacinia=sit&nisi=amet&venenatis=turpis&tristique=elementum&fusce=ligula&congue=vehicula&diam=consequat&id=morbi&ornare=a&imperdiet=ipsum&sapien=integer&urna=a&pretium=nibh&nisl=in&ut=quis&volutpat=justo&sapien=maecenas&arcu=rhoncus&sed=aliquam&augue=lacus&aliquam=morbi&erat=quis&volutpat=tortor&in=id&congue=nulla&etiam=ultrices&justo=aliquet&etiam=maecenas&pretium=leo&iaculis=odio",
+    "image": "http://dummyimage.com/x.png/ff4444/ffffff",
+    "stock": 3,
+    "priority": 0
+  },
+  {
+    "id": "93f1e099-f3ef-495a-9ddd-e9cf2a387454",
+    "name": "Halloween Decoration Set",
+    "description": "Fun decorations for Halloween to set a spooky atmosphere.",
+    "link": "http://usda.gov/non/lectus/aliquam/sit/amet/diam.jsp?est=quis&risus=lectus&auctor=suspendisse&sed=potenti&tristique=in&in=eleifend&tempus=quam&sit=a&amet=odio&sem=in&fusce=hac&consequat=habitasse&nulla=platea&nisl=dictumst&nunc=maecenas&nisl=ut&duis=massa&bibendum=quis&felis=augue&sed=luctus&interdum=tincidunt&venenatis=nulla&turpis=mollis&enim=molestie&blandit=lorem&mi=quisque&in=ut&porttitor=erat&pede=curabitur&justo=gravida&eu=nisi&massa=at&donec=nibh&dapibus=in&duis=hac&at=habitasse&velit=platea&eu=dictumst&est=aliquam&congue=augue&elementum=quam&in=sollicitudin&hac=vitae&habitasse=consectetuer&platea=eget&dictumst=rutrum",
+    "image": "http://dummyimage.com/x.png/ff4444/ffffff",
+    "stock": 5,
+    "priority": 10
+  }
 ]

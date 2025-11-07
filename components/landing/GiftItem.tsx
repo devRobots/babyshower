@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export interface GiftItemProps {
   name: string;
   description: string;
@@ -7,11 +9,11 @@ export interface GiftItemProps {
 }
 
 export default function GiftItem(props: GiftItemProps) {
-  const { name, description, image, price, link } = props;
+  const { name, description, image } = props;
 
   return (
     <article className="flex flex-col bg-white rounded-2xl shadow-sm">
-      <div className="aspect-square bg-gray-400 rounded-t-2xl" />
+      <Image src={image} alt={name} className="aspect-square bg-gray-400 rounded-t-2xl" width={256} height={256} unoptimized />
       <main className="flex flex-col gap-2 p-4 justify-between flex-1">
         <div className="flex flex-col gap-1">
           <h3 className="font-semibold text-pretty">{name}</h3>
