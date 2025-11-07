@@ -1,0 +1,16 @@
+[
+    {
+        "name": "Pañalero (Set de 5)",
+        "description": "De algodón suave, 0-3 meses.",
+        "price": 450.0,
+        "link": "https://www.amazon.com/...",
+        "image": "https://url-de-tu-imagen.com/panalero.jpg"
+    },
+    {
+        "name": "Monitor de Bebé",
+        "description": "Con cámara y audio.",
+        "price": 2100.50,
+        "link": "https://www.amazon.com/...",
+        "image": "https://url-de-tu-imagen.com/monitor.jpg"
+    }
+]
