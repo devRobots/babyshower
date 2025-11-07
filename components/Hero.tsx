@@ -6,6 +6,7 @@ export default function Hero() {
 
   return (
     <section className="flex flex-col text-white bg-amber-300 items-center justify-center gap-4 p-8 rounded-4xl text-pretty text-center min-h-[350px]">
+      <span className="text-4xl md:text-8xl">👼🏻</span>
       <h1 className="text-4xl font-bold">
         Estás Invitado al Baby Shower de {mom} & {dad}
       </h1>
