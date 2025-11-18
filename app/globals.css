@@ -22,6 +22,14 @@
   footer {
     @apply flex flex-col w-full items-center text-black/60;
   }
+
+  input {
+    @apply border border-secondary rounded-4xl px-4 py-2 w-full;
+  }
+
+  textarea {
+    @apply border border-secondary rounded-3xl px-4 py-3 w-full resize-none focus:outline-none focus:ring-2 focus:ring-primary/30;
+  }
 }
 
 @layer components {
@@ -75,11 +83,83 @@
     @apply flex flex-col items-center justify-center min-h-screen w-full;
   }
 
+  button.button-primary {
+    @apply rounded-full px-4 py-3 font-bold text-sm w-48 bg-primary text-white hover:cursor-pointer;
+  }
+
   a.button-primary {
     @apply rounded-full px-4 py-3 font-bold text-sm w-48 bg-primary;
   }
 
   a.button-secondary {
     @apply w-full rounded-full px-4 py-2 font-bold text-sm text-primary bg-secondary text-center;
+  }
+
+  /* RSVP Components */
+  article.response-card {
+    @apply relative w-full max-w-2xl bg-white rounded-3xl shadow-lg overflow-hidden;
+    @apply border-4 border-secondary;
+
+    .watermark {
+      @apply absolute md:-top-4 -right-24 pointer-events-none;
+      @apply opacity-50 z-0;
+
+      .watermark-emoji {
+        @apply text-[10rem] md:text-[12rem] leading-none;
+      }
+    }
+
+    .card-content {
+      @apply relative z-10 p-8 md:p-12;
+    }
+  }
+
+  section.rsvp-header {
+    @apply flex flex-col gap-3;
+
+    .rsvp-emoji {
+      @apply text-5xl md:text-6xl;
+    }
+
+    .rsvp-title {
+      @apply text-3xl md:text-4xl font-bold text-primary;
+    }
+
+    .rsvp-subtitle {
+      @apply text-base md:text-lg text-black/60 text-pretty;
+    }
+  }
+
+  form.guest-form {
+    @apply flex flex-col gap-5;
+
+    .form-field {
+      @apply flex flex-col gap-2;
+    }
+
+    .form-label {
+      @apply text-sm font-medium text-black/70;
+    }
+
+    .radio-group {
+      @apply flex flex-col sm:flex-row pt-2 gap-3;
+    }
+
+    .radio-option {
+      @apply flex items-center gap-3 border-2 border-secondary rounded-3xl px-6 py-3;
+      @apply cursor-pointer transition-all hover:bg-secondary/30 hover:border-primary;
+
+      input[type="radio"] {
+        @apply w-5 h-5 accent-primary cursor-pointer;
+      }
+
+      span {
+        @apply text-sm font-medium;
+      }
+    }
+
+    .radio-option:has(input:checked) {
+      @apply bg-secondary border-primary;
+    }
   }
 }
