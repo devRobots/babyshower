@@ -1,10 +1,18 @@
 "use client";
 
+import { useRouter } from 'next/navigation';
+
 export default function GuestForm() {
+  const router = useRouter();
+
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    // TODO: Implementar lógica de envío del formulario
-    console.log("Formulario enviado");
+
+    const formData = new FormData(e.currentTarget);
+    const attending = formData.get('attending') === 'yes';
+
+    console.log("Formulario enviado", Object.fromEntries(formData));
+    router.push(`/rsvp/confirm?attending=${attending}`);
   };
 
   return (
