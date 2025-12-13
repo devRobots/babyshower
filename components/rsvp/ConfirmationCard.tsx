@@ -45,7 +45,7 @@ export default function ConfirmationCard({ isAttending }: ConfirmationCardProps)
 
         <div className="flex flex-col items-center gap-4 mt-4 w-full max-w-xs">
           <Link
-            href={isAttending ? "/#regalos" : "/rsvp"}
+            href={isAttending ? "/gifts" : "/rsvp"}
             className="button-primary text-center text-white w-full"
           >
             {isAttending ? "Seleccionar un regalo" : "Cambié de opinión"}

@@ -20,7 +20,7 @@ export default async function GiftList() {
   });
 
   return (
-    <section className="gifts">
+    <section id="gifts" className="gifts">
       <section className="prologue">
         <h2>Lista de Regalos</h2>
         <p>
