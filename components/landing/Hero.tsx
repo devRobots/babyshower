@@ -5,7 +5,7 @@ export default function Hero() {
   const { mom, dad } = parents;
 
   return (
-    <section className="hero relative lg:aspect-[3/1] overflow-hidden">
+    <section className="hero relative lg:aspect-3/1 overflow-hidden">
       <img
         src="/hero.webp"
         alt="Baby shower hero"
