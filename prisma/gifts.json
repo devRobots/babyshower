@@ -1,110 +1,317 @@
 [
   {
-    "id": "fa8b84ad-7f1b-43e2-ad83-e9e33174099b",
-    "name": "Aged White Cheddar Popcorn",
-    "description": "Light and fluffy popcorn coated in aged white cheddar.",
-    "link": "http://blogger.com/nullam/sit/amet/turpis.json?facilisi=vulputate&cras=elementum&non=nullam&velit=varius&nec=nulla&nisi=facilisi&vulputate=cras&nonummy=non&maecenas=velit&tincidunt=nec&lacus=nisi&at=vulputate&velit=nonummy&vivamus=maecenas&vel=tincidunt&nulla=lacus&eget=at&eros=velit&elementum=vivamus&pellentesque=vel&quisque=nulla&porta=eget&volutpat=eros&erat=elementum&quisque=pellentesque&erat=quisque&eros=porta&viverra=volutpat&eget=erat&congue=quisque&eget=erat&semper=eros&rutrum=viverra&nulla=eget&nunc=congue&purus=eget&phasellus=semper&in=rutrum&felis=nulla&donec=nunc&semper=purus&sapien=phasellus&a=in&libero=felis&nam=donec&dui=semper&proin=sapien&leo=a&odio=libero&porttitor=nam&id=dui&consequat=proin&in=leo&consequat=odio&ut=porttitor&nulla=id&sed=consequat&accumsan=in&felis=consequat&ut=ut&at=nulla&dolor=sed&quis=accumsan",
-    "image": "http://dummyimage.com/x.png/dddddd/000000",
+    "id": "baby-shower-001",
+    "name": "Monitor de Bebé con Cámara",
+    "description": "Porque los papás también necesitan dormir (aunque sea un poquito). Vigilancia 24/7 para estar tranquilos.",
+    "link": "https://www.amazon.es/dp/B01M5F85B4",
+    "image": "https://m.media-amazon.com/images/I/61PseMIWgpL._AC_SY355_.jpg",
+    "stock": 1,
+    "priority": 10
+  },
+  {
+    "id": "baby-shower-002",
+    "name": "Trona para Bebés",
+    "description": "El trono del pequeño rey o reina de la casa. Perfecta para sus primeras aventuras culinarias (y sus primeros desastres).",
+    "link": "https://www.amazon.es/dp/B09QKT29SH",
+    "image": "https://m.media-amazon.com/images/I/61c79g2YjvL._AC_SL1500_.jpg",
     "stock": 1,
     "priority": 9
   },
   {
-    "id": "8ee700b2-b64b-4920-b32d-aa1ff6c6534b",
-    "name": "Honey",
-    "description": "Pure and natural honey, great for sweetening.",
-    "link": "http://wsj.com/vestibulum/proin/eu/mi/nulla.html?aliquam=pellentesque&quis=ultrices&turpis=mattis&eget=odio&elit=donec&sodales=vitae&scelerisque=nisi&mauris=nam&sit=ultrices&amet=libero&eros=non&suspendisse=mattis&accumsan=pulvinar&tortor=nulla&quis=pede&turpis=ullamcorper&sed=augue&ante=a&vivamus=suscipit&tortor=nulla&duis=elit&mattis=ac&egestas=nulla&metus=sed&aenean=vel&fermentum=enim&donec=sit&ut=amet",
-    "image": "http://dummyimage.com/x.png/dddddd/000000",
+    "id": "baby-shower-003",
+    "name": "Tipi Infantil de Interior",
+    "description": "El primer fuerte secreto del bebé. Un rinconcito mágico para jugar, soñar y esconderse de los adultos.",
+    "link": "https://www.amazon.es/dp/B0D982JJMH",
+    "image": "https://m.media-amazon.com/images/I/61Yxm6BXe5L._AC_SY300_SX300_QL70_ML2_.jpg",
+    "stock": 1,
+    "priority": 9
+  },
+  {
+    "id": "baby-shower-004",
+    "name": "Mochila Portabebé Ergonómica",
+    "description": "Para llevar al peque a todas partes sin sacrificar tu espalda. ¡Paseos, aventuras y abrazos incluidos!",
+    "link": "https://www.amazon.es/dp/B0D2P84RDZ",
+    "image": "https://m.media-amazon.com/images/I/51zy3OC9v-L._AC_SX425_.jpg",
+    "stock": 1,
+    "priority": 9
+  },
+  {
+    "id": "baby-shower-005",
+    "name": "Silla Mecedora Eléctrica para Bebés",
+    "description": "El mejor invento desde el chupete. Mecimiento suave y automático para que el bebé (y los papás) descansen en paz.",
+    "link": "https://www.amazon.es/dp/B084SWBLN1",
+    "image": "https://m.media-amazon.com/images/I/617gqFYQNLL._AC_SY450_.jpg",
+    "stock": 1,
+    "priority": 9
+  },
+  {
+    "id": "baby-shower-006",
+    "name": "Cambiador de Pañales Portátil",
+    "description": "Porque los pañales no esperan. El mejor aliado para los cambios de emergencia en cualquier lugar.",
+    "link": "https://www.amazon.es/dp/B0943ZH78Y",
+    "image": "https://m.media-amazon.com/images/I/71nKl5atJsL._AC_SY355_.jpg",
     "stock": 2,
-    "priority": 0
+    "priority": 8
   },
   {
-    "id": "008644d6-8686-4012-a46e-206616d3e1e8",
-    "name": "Freestanding Wine Rack",
-    "description": "Stylish wine rack to store and display bottles.",
-    "link": "https://si.edu/rutrum/neque/aenean/auctor/gravida/sem/praesent.xml?ut=erat&rhoncus=id&aliquet=mauris",
-    "image": "http://dummyimage.com/x.png/ff4444/ffffff",
+    "id": "baby-shower-007",
+    "name": "Pañalera Organizadora",
+    "description": "Mary Poppins estaría orgullosa de esta bolsa. Cabe todo lo que necesitas y más (¡mucho más!).",
+    "link": "https://www.amazon.es/dp/B07B7MKH5P",
+    "image": "https://m.media-amazon.com/images/I/81idmacfymL._AC_SY575_.jpg",
+    "stock": 1,
+    "priority": 8
+  },
+  {
+    "id": "baby-shower-008",
+    "name": "Extractor de Leche Eléctrico",
+    "description": "La mejor inversión para mamá. Práctico, silencioso y eficiente, porque cada gotita cuenta.",
+    "link": "https://www.amazon.es/dp/B0CGNJBS1J",
+    "image": "https://m.media-amazon.com/images/I/71BmBNzyT7L._AC_SX425_.jpg",
+    "stock": 1,
+    "priority": 8
+  },
+  {
+    "id": "baby-shower-009",
+    "name": "Alfombra de Juegos para Bebés",
+    "description": "La zona VIP del bebé. Suave, acolchada y perfecta para gatear, rodar y descubrir el mundo.",
+    "link": "https://www.amazon.es/dp/B0BSNFCTGS",
+    "image": "https://m.media-amazon.com/images/I/71CkABGz53L._AC_SX679_.jpg",
+    "stock": 2,
+    "priority": 8
+  },
+  {
+    "id": "baby-shower-010",
+    "name": "Estantería Organizadora Infantil",
+    "description": "Orden y diversión en un solo mueble. Perfecta para guardar juguetes y mantener todo a la vista (y al alcance del peque).",
+    "link": "https://www.lidl.es/es/estanteria/p82879",
+    "image": "https://www.lidl.es/media/product/0/0/8/2/8/7/9/estanteria-zoom--6.png",
+    "stock": 1,
+    "priority": 7
+  },
+  {
+    "id": "baby-shower-011",
+    "name": "Andador para Niños",
+    "description": "¡Sus primeros pasos hacia la independencia! Con música, luces y diversión sobre ruedas.",
+    "link": "https://www.amazon.es/dp/B0D2Q93B1P",
+    "image": "https://m.media-amazon.com/images/I/71w8KdyWjZL._AC_SX425_.jpg",
+    "stock": 1,
+    "priority": 7
+  },
+  {
+    "id": "baby-shower-012",
+    "name": "Juguetes para Recién Nacidos",
+    "description": "Los primeros amigos del bebé. Perfectos para estimular sus sentidos y arrancar sus primeras sonrisas.",
+    "link": "https://www.lidl.es/es/juguetes-para-bebes/c6520",
+    "image": "https://www.lidl.es/media/product/0/0/8/6/0/0/5/caja-de-transporte-con-gato-de-peluche-y-accesorios-zoom--1.jpg",
+    "stock": 4,
+    "priority": 7
+  },
+  {
+    "id": "baby-shower-013",
+    "name": "Biberones Anti-Cólicos",
+    "description": "Para que las comidas sean momento de paz (o al menos lo intentemos). Sistema anti-cólicos incluido.",
+    "link": "https://www.amazon.es/dp/B0BWFLY8HV",
+    "image": "https://m.media-amazon.com/images/I/71+XJ+1kzCL._AC_SX425_.jpg",
+    "stock": 3,
+    "priority": 7
+  },
+  {
+    "id": "baby-shower-014",
+    "name": "Bolsas de Almacenamiento de Leche Materna",
+    "description": "Con detección de temperatura para conservar el oro líquido. Prácticas, seguras y súper útiles.",
+    "link": "https://www.amazon.es/dp/B0CQL6LN7W",
+    "image": "https://m.media-amazon.com/images/I/618SHOE4fbL._AC_SX425_PIbundle-120,TopRight,0,0_SH20_.jpg",
+    "stock": 3,
+    "priority": 7
+  },
+  {
+    "id": "baby-shower-015",
+    "name": "Trona de Viaje Portátil",
+    "description": "Compacta y ligera, perfecta para llevar a restaurantes, casas de amigos o de vacaciones. ¡La trona que viaja contigo!",
+    "link": "https://www.amazon.es/dp/B07ZWKYZBG",
+    "image": "https://m.media-amazon.com/images/I/51E4wnQT53L._AC_SY450_.jpg",
+    "stock": 1,
+    "priority": 7
+  },
+  {
+    "id": "baby-shower-016",
+    "name": "Abrigo para Bebés",
+    "description": "Porque los bebés también tienen derecho a estar a la moda y calentitos. ¡Adorable y abrigadito!",
+    "link": "https://www.amazon.es/dp/B0D9YC81SS",
+    "image": "https://m.media-amazon.com/images/I/618oUEMZVBL._AC_SX569_.jpg",
+    "stock": 2,
+    "priority": 6
+  },
+  {
+    "id": "baby-shower-017",
+    "name": "Saco de Dormir para Bebé",
+    "description": "Para noches tranquilas y dulces sueños. No más mantas que se caen, solo comodidad y calorcito.",
+    "link": "https://www.amazon.es/dp/B09C631H16",
+    "image": "https://m.media-amazon.com/images/I/81nvrHhFmlL._AC_SX425_.jpg",
+    "stock": 2,
+    "priority": 6
+  },
+  {
+    "id": "baby-shower-018",
+    "name": "Set de Cuidado para Bebés",
+    "description": "El kit completo de cuidados para el peque: cortauñas, lima, cepillo y todo lo necesario para estar impecable.",
+    "link": "https://www.amazon.es/dp/B0D22BFPZK",
+    "image": "https://m.media-amazon.com/images/I/71SMUj22MXL._AC_SY300_SX300_QL70_ML2_.jpg",
+    "stock": 2,
+    "priority": 6
+  },
+  {
+    "id": "baby-shower-019",
+    "name": "Alfombra Acolchada",
+    "description": "Perfecta para aventuras al aire libre con el bebé. Acolchada y lista para cualquier plan.",
+    "link": "https://www.vertbaudet.es/alfombra-fondo-para-parque-acolchado-trek-multicolor.htm?ProductId=341003391&FiltreCouleur=0201",
+    "image": "https://www.vertbaudet.es/fstrz/r/s/media.vertbaudet.es/Pictures/vertbaudet/507806/alfombra-fondo-para-parque-acolchado-trek.jpg?width=800",
+    "stock": 2,
+    "priority": 6
+  },
+  {
+    "id": "baby-shower-020",
+    "name": "Juguete para Gatear",
+    "description": "¡A moverse se ha dicho! Este juguete anima al bebé a gatear y explorar con luces, música y movimiento.",
+    "link": "https://www.amazon.es/dp/B0D1QNRJTT",
+    "image": "https://m.media-amazon.com/images/I/71rdxgoxGXL._AC_SX679_.jpg",
+    "stock": 1,
+    "priority": 6
+  },
+  {
+    "id": "baby-shower-021",
+    "name": "Baberos",
+    "description": "Porque comer es una aventura épica (y muy sucia).",
+    "link": "https://www.amazon.es/dp/B09ZY2WKG2",
+    "image": "https://m.media-amazon.com/images/I/61o8veXZesL._AC_SY606_.jpg",
     "stock": 5,
-    "priority": 4
+    "priority": 5
   },
   {
-    "id": "5a14572e-47b6-458d-8908-c1ac426c8048",
-    "name": "Soft Plush Throw Blanket",
-    "description": "Cozy throw blanket perfect for chilly evenings.",
-    "link": "https://sfgate.com/ligula/in/lacus/curabitur/at/ipsum/ac.js?in=vestibulum&sapien=aliquet&iaculis=ultrices&congue=erat&vivamus=tortor&metus=sollicitudin&arcu=mi&adipiscing=sit&molestie=amet&hendrerit=lobortis&at=sapien&vulputate=sapien&vitae=non&nisl=mi",
-    "image": "http://dummyimage.com/x.png/5fa2dd/ffffff",
+    "id": "baby-shower-022",
+    "name": "Juguetes Sensoriales para Bebés",
+    "description": "Texturas, colores y sonidos para estimular todos sus sentidos. ¡Diversión asegurada!",
+    "link": "https://www.amazon.es/dp/B0D5YH8HBH",
+    "image": "https://m.media-amazon.com/images/I/61PBwTpSCtL._AC_SX679_.jpg",
+    "stock": 4,
+    "priority": 5
+  },
+  {
+    "id": "baby-shower-023",
+    "name": "Libros Blanditos para Bebés",
+    "description": "Nunca es demasiado pronto para amar los libros. Blanditos, coloridos y perfectos para mordisquear... ¡digo, leer!",
+    "link": "https://www.amazon.es/dp/B092J6Q6B5",
+    "image": "https://m.media-amazon.com/images/I/81+pyoLIf9L._AC_SX425_PIbundle-2,TopRight,0,0_SH20_.jpg",
+    "stock": 5,
+    "priority": 5
+  },
+  {
+    "id": "baby-shower-024",
+    "name": "Juego de Vajilla para Bebé",
+    "description": "Su primer juego de platos para comenzar a comer como los mayores. Con ventosa anti-volcado (muy necesaria).",
+    "link": "https://www.amazon.es/dp/B0CQC2ZRHH",
+    "image": "https://m.media-amazon.com/images/I/71zKrIT+EjL._AC_SX679_.jpg",
     "stock": 3,
     "priority": 5
   },
   {
-    "id": "56ec547c-1094-4c94-8209-d4ead58d23d0",
-    "name": "Herbed Chicken Breast",
-    "description": "Marinated chicken breast seasoned with herbs, ready for grilling.",
-    "link": "https://elegantthemes.com/commodo/vulputate/justo.html?diam=in&erat=quis&fermentum=justo&justo=maecenas&nec=rhoncus&condimentum=aliquam&neque=lacus&sapien=morbi&placerat=quis&ante=tortor&nulla=id&justo=nulla&aliquam=ultrices&quis=aliquet&turpis=maecenas&eget=leo&elit=odio&sodales=condimentum&scelerisque=id&mauris=luctus&sit=nec&amet=molestie&eros=sed&suspendisse=justo&accumsan=pellentesque&tortor=viverra&quis=pede&turpis=ac&sed=diam&ante=cras&vivamus=pellentesque&tortor=volutpat&duis=dui&mattis=maecenas&egestas=tristique&metus=est&aenean=et&fermentum=tempus&donec=semper&ut=est&mauris=quam&eget=pharetra&massa=magna&tempor=ac&convallis=consequat&nulla=metus&neque=sapien&libero=ut&convallis=nunc&eget=vestibulum&eleifend=ante&luctus=ipsum&ultricies=primis&eu=in",
-    "image": "http://dummyimage.com/x.png/dddddd/000000",
-    "stock": 2,
+    "id": "baby-shower-025",
+    "name": "Juguetes de Habilidades Motoras",
+    "description": "Para pequeños genios en desarrollo. Estimulan la coordinación, la concentración y la creatividad.",
+    "link": "https://www.amazon.es/dp/B09XKDZT6S",
+    "image": "https://m.media-amazon.com/images/I/815oAHdrNPL._AC_SX679_.jpg",
+    "stock": 3,
+    "priority": 5
+  },
+  {
+    "id": "baby-shower-026",
+    "name": "Canastilla de Regalos Baby Shower",
+    "description": "¡El pack definitivo para darle la bienvenida al bebé! Una canastilla repleta de sorpresas que hará sonreír a los papás.",
+    "link": "https://www.amazon.es/dp/B0CVSCGLRZ",
+    "image": "https://m.media-amazon.com/images/I/818sL2yY88L._SY500_.jpg",
+    "stock": 5,
+    "priority": 4
+  },
+  {
+    "id": "baby-shower-027",
+    "name": "Juguetes de Baño para Bebé",
+    "description": "Para que la hora del baño sea la favorita del día. Chapuzones y risas garantizadas.",
+    "link": "https://www.amazon.es/dp/B0F1KTKFJJ",
+    "image": "https://m.media-amazon.com/images/I/71SVSUDrl3L._AC_SX679_.jpg",
+    "stock": 3,
+    "priority": 4
+  },
+  {
+    "id": "baby-shower-028",
+    "name": "Sonajeros",
+    "description": "Los primeros instrumentos del bebé. Porque nunca es demasiado pronto para hacer ruido... ¡digo, música!",
+    "link": "https://www.amazon.es/dp/B0F9FKPKWN",
+    "image": "https://m.media-amazon.com/images/I/71twa9QvdxL._AC_SX425_.jpg",
+    "stock": 5,
+    "priority": 4
+  },
+  {
+    "id": "baby-shower-029",
+    "name": "Pañales Reutilizables",
+    "description": "Eco-friendly y económicos a largo plazo. Suaves, ajustables y perfectos para cuidar del bebé y del planeta.",
+    "link": "https://www.amazon.es/dp/B07WH2HRCR",
+    "image": "https://m.media-amazon.com/images/I/81zuez2jbHL._AC_SX679_.jpg",
+    "stock": 6,
+    "priority": 4
+  },
+  {
+    "id": "baby-shower-030",
+    "name": "Gel de Baño para Bebés",
+    "description": "Suave como una nube y perfumado con amor. Para que la piel del bebé esté siempre perfecta.",
+    "link": "https://www.amazon.es/dp/B083SQX3W6",
+    "image": "https://m.media-amazon.com/images/I/71yK7HlbQfL._AC_SX300_SY300_QL70_ML2_.jpg",
+    "stock": 6,
+    "priority": 3
+  },
+  {
+    "id": "baby-shower-031",
+    "name": "Toallitas Húmedas",
+    "description": "El salvavidas de los papás. Para limpiar todo, en todo momento, en cualquier lugar.",
+    "link": "https://www.amazon.es/dp/B09GPJHCQL",
+    "image": "https://m.media-amazon.com/images/I/81pY+tWmhFL._AC_SX679_PIbundle-18,TopRight,0,0_SH20_.jpg",
+    "stock": 12,
     "priority": 2
   },
   {
-    "id": "6a7b3b0d-f500-420d-ba07-b25794b33f37",
-    "name": "Snap-On Tupperware Set",
-    "description": "Durable and versatile food storage containers.",
-    "link": "https://flickr.com/pulvinar/lobortis/est/phasellus/sit.png?eget=molestie&vulputate=lorem&ut=quisque&ultrices=ut&vel=erat&augue=curabitur&vestibulum=gravida&ante=nisi&ipsum=at&primis=nibh&in=in&faucibus=hac&orci=habitasse&luctus=platea&et=dictumst&ultrices=aliquam&posuere=augue&cubilia=quam&curae=sollicitudin&donec=vitae&pharetra=consectetuer&magna=eget&vestibulum=rutrum&aliquet=at&ultrices=lorem&erat=integer&tortor=tincidunt&sollicitudin=ante&mi=vel&sit=ipsum&amet=praesent&lobortis=blandit&sapien=lacinia&sapien=erat&non=vestibulum&mi=sed&integer=magna&ac=at&neque=nunc&duis=commodo&bibendum=placerat&morbi=praesent&non=blandit",
-    "image": "http://dummyimage.com/x.png/ff4444/ffffff",
-    "stock": 4,
-    "priority": 0
-  },
-  {
-    "id": "872106e8-daaf-4494-84a1-fa0efdce1d25",
-    "name": "Personalized Pet ID Tags",
-    "description": "Custom engraved ID tags for pets with your contact information.",
-    "link": "http://printfriendly.com/odio.png?semper=blandit&porta=ultrices&volutpat=enim&quam=lorem&pede=ipsum&lobortis=dolor&ligula=sit&sit=amet&amet=consectetuer&eleifend=adipiscing&pede=elit&libero=proin&quis=interdum&orci=mauris&nullam=non&molestie=ligula&nibh=pellentesque&in=ultrices&lectus=phasellus&pellentesque=id&at=sapien&nulla=in&suspendisse=sapien&potenti=iaculis&cras=congue&in=vivamus&purus=metus&eu=arcu&magna=adipiscing&vulputate=molestie&luctus=hendrerit&cum=at&sociis=vulputate&natoque=vitae&penatibus=nisl&et=aenean&magnis=lectus&dis=pellentesque&parturient=eget&montes=nunc&nascetur=donec&ridiculus=quis&mus=orci&vivamus=eget&vestibulum=orci&sagittis=vehicula&sapien=condimentum&cum=curabitur&sociis=in&natoque=libero&penatibus=ut&et=massa&magnis=volutpat&dis=convallis&parturient=morbi&montes=odio&nascetur=odio&ridiculus=elementum&mus=eu&etiam=interdum&vel=eu&augue=tincidunt&vestibulum=in&rutrum=leo&rutrum=maecenas&neque=pulvinar&aenean=lobortis&auctor=est&gravida=phasellus&sem=sit&praesent=amet&id=erat&massa=nulla&id=tempus&nisl=vivamus&venenatis=in&lacinia=felis&aenean=eu&sit=sapien&amet=cursus&justo=vestibulum&morbi=proin&ut=eu&odio=mi&cras=nulla&mi=ac&pede=enim",
-    "image": "http://dummyimage.com/x.png/5fa2dd/ffffff",
-    "stock": 3,
-    "priority": 10
-  },
-  {
-    "id": "323db8a4-8ce9-4e52-af04-290e66fce4a2",
-    "name": "Belted Trench Coat",
-    "description": "Timeless belted trench coat for a polished look during fall.",
-    "link": "http://squarespace.com/maecenas/pulvinar/lobortis/est/phasellus/sit.xml?facilisi=phasellus&cras=sit&non=amet&velit=erat&nec=nulla&nisi=tempus&vulputate=vivamus&nonummy=in&maecenas=felis&tincidunt=eu&lacus=sapien&at=cursus&velit=vestibulum&vivamus=proin&vel=eu&nulla=mi&eget=nulla&eros=ac&elementum=enim&pellentesque=in&quisque=tempor&porta=turpis&volutpat=nec&erat=euismod",
-    "image": "http://dummyimage.com/x.png/5fa2dd/ffffff",
-    "stock": 3,
-    "priority": 10
-  },
-  {
-    "id": "b83a1b64-7590-4b34-a3b0-8629c959dc7b",
-    "name": "Classic Chicken Noodle Soup",
-    "description": "A comforting soup filled with chicken and noodles in broth.",
-    "link": "https://sogou.com/lacus/morbi/quis/tortor/id.html?nisi=molestie&venenatis=hendrerit&tristique=at&fusce=vulputate&congue=vitae&diam=nisl&id=aenean&ornare=lectus&imperdiet=pellentesque&sapien=eget&urna=nunc&pretium=donec&nisl=quis&ut=orci&volutpat=eget&sapien=orci&arcu=vehicula&sed=condimentum&augue=curabitur&aliquam=in&erat=libero&volutpat=ut&in=massa&congue=volutpat&etiam=convallis&justo=morbi&etiam=odio&pretium=odio&iaculis=elementum&justo=eu&in=interdum&hac=eu&habitasse=tincidunt&platea=in&dictumst=leo&etiam=maecenas&faucibus=pulvinar&cursus=lobortis&urna=est&ut=phasellus&tellus=sit&nulla=amet&ut=erat&erat=nulla&id=tempus&mauris=vivamus&vulputate=in&elementum=felis&nullam=eu&varius=sapien&nulla=cursus&facilisi=vestibulum&cras=proin&non=eu&velit=mi&nec=nulla&nisi=ac&vulputate=enim&nonummy=in&maecenas=tempor&tincidunt=turpis&lacus=nec&at=euismod&velit=scelerisque&vivamus=quam&vel=turpis&nulla=adipiscing&eget=lorem&eros=vitae&elementum=mattis&pellentesque=nibh&quisque=ligula&porta=nec&volutpat=sem&erat=duis&quisque=aliquam&erat=convallis&eros=nunc&viverra=proin&eget=at&congue=turpis&eget=a&semper=pede&rutrum=posuere&nulla=nonummy&nunc=integer",
-    "image": "http://dummyimage.com/x.png/cc0000/ffffff",
-    "stock": 5,
+    "id": "baby-shower-032",
+    "name": "Pañales Desechables",
+    "description": "Lo básico es lo más importante. Suaves, absorbentes y listos para la acción (¡mucha acción!).",
+    "link": "https://www.amazon.es/dp/B0976Z2GMQ",
+    "image": "https://m.media-amazon.com/images/I/81ZEJr84nXL._AC_SL1500_.jpg",
+    "stock": 15,
     "priority": 1
   },
   {
-    "id": "c1e940c8-99c2-410c-a353-ea3058d46e7f",
-    "name": "Cilantro Lime Rice",
-    "description": "Easy-to-prepare rice with cilantro and lime flavors, great as a side.",
-    "link": "https://si.edu/odio.png?mauris=turpis&enim=integer&leo=aliquet&rhoncus=massa&sed=id&vestibulum=lobortis&sit=convallis&amet=tortor&cursus=risus&id=dapibus&turpis=augue&integer=vel&aliquet=accumsan&massa=tellus&id=nisi&lobortis=eu&convallis=orci&tortor=mauris&risus=lacinia",
-    "image": "http://dummyimage.com/x.png/dddddd/000000",
-    "stock": 4,
-    "priority": 6
-  },
-  {
-    "id": "c6f53e05-fe0c-403c-b802-10055b2d5f10",
-    "name": "Classic Bagels",
-    "description": "Freshly baked bagels, perfect for breakfast or snacks.",
-    "link": "https://taobao.com/vestibulum/ante/ipsum/primis.json?vel=risus&est=dapibus&donec=augue&odio=vel&justo=accumsan&sollicitudin=tellus&ut=nisi&suscipit=eu&a=orci&feugiat=mauris&et=lacinia&eros=sapien&vestibulum=quis&ac=libero&est=nullam&lacinia=sit&nisi=amet&venenatis=turpis&tristique=elementum&fusce=ligula&congue=vehicula&diam=consequat&id=morbi&ornare=a&imperdiet=ipsum&sapien=integer&urna=a&pretium=nibh&nisl=in&ut=quis&volutpat=justo&sapien=maecenas&arcu=rhoncus&sed=aliquam&augue=lacus&aliquam=morbi&erat=quis&volutpat=tortor&in=id&congue=nulla&etiam=ultrices&justo=aliquet&etiam=maecenas&pretium=leo&iaculis=odio",
-    "image": "http://dummyimage.com/x.png/ff4444/ffffff",
-    "stock": 3,
+    "id": "baby-shower-dummy-001",
+    "name": "DUMMY-01 x20",
+    "description": "Producto de pruebas #1",
+    "link": "https://www.amazon.es/dp/DUMMY001",
+    "image": "https://m.media-amazon.com/images/I/61tNZMDVvPL._AC_SX425_.jpg",
+    "stock": 20,
     "priority": 0
   },
   {
-    "id": "93f1e099-f3ef-495a-9ddd-e9cf2a387454",
-    "name": "Halloween Decoration Set",
-    "description": "Fun decorations for Halloween to set a spooky atmosphere.",
-    "link": "http://usda.gov/non/lectus/aliquam/sit/amet/diam.jsp?est=quis&risus=lectus&auctor=suspendisse&sed=potenti&tristique=in&in=eleifend&tempus=quam&sit=a&amet=odio&sem=in&fusce=hac&consequat=habitasse&nulla=platea&nisl=dictumst&nunc=maecenas&nisl=ut&duis=massa&bibendum=quis&felis=augue&sed=luctus&interdum=tincidunt&venenatis=nulla&turpis=mollis&enim=molestie&blandit=lorem&mi=quisque&in=ut&porttitor=erat&pede=curabitur&justo=gravida&eu=nisi&massa=at&donec=nibh&dapibus=in&duis=hac&at=habitasse&velit=platea&eu=dictumst&est=aliquam&congue=augue&elementum=quam&in=sollicitudin&hac=vitae&habitasse=consectetuer&platea=eget&dictumst=rutrum",
-    "image": "http://dummyimage.com/x.png/ff4444/ffffff",
+    "id": "baby-shower-dummy-002",
+    "name": "DUMMY-02 x5",
+    "description": "Producto de pruebas #2",
+    "link": "https://www.amazon.es/dp/DUMMY002",
+    "image": "https://m.media-amazon.com/images/I/61tNZMDVvPL._AC_SX425_.jpg",
     "stock": 5,
-    "priority": 10
+    "priority": 0
+  },
+  {
+    "id": "baby-shower-dummy-003",
+    "name": "DUMMY-03 x1",
+    "description": "Producto de pruebas #3",
+    "link": "https://www.amazon.es/dp/DUMMY003",
+    "image": "https://m.media-amazon.com/images/I/61tNZMDVvPL._AC_SX425_.jpg",
+    "stock": 1,
+    "priority": 0
   }
 ]

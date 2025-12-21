@@ -72,7 +72,7 @@
 
   article.gift-item {
     @apply flex flex-col bg-white rounded-2xl shadow-sm;
-    .gift-image { @apply aspect-square bg-gray-400 rounded-t-2xl; }
+    .gift-image { @apply aspect-square bg-gray-400 rounded-t-2xl object-center w-full; }
     main { 
       @apply flex flex-col gap-2 p-4 justify-between flex-1; 
       div { @apply flex flex-col gap-1; }
