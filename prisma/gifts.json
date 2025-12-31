@@ -27,15 +27,6 @@
     "priority": 9
   },
   {
-    "id": "baby-shower-004",
-    "name": "Mochila Portabebé Ergonómica",
-    "description": "Para llevar al peque a todas partes sin sacrificar tu espalda. ¡Paseos, aventuras y abrazos incluidos!",
-    "link": "https://www.amazon.es/dp/B0D2P84RDZ",
-    "image": "https://m.media-amazon.com/images/I/51zy3OC9v-L._AC_SX425_.jpg",
-    "stock": 1,
-    "priority": 9
-  },
-  {
     "id": "baby-shower-005",
     "name": "Silla Mecedora Eléctrica para Bebés",
     "description": "El mejor invento desde el chupete. Mecimiento suave y automático para que el bebé (y los papás) descansen en paz.",
@@ -280,11 +271,38 @@
   },
   {
     "id": "baby-shower-032",
-    "name": "Pañales Desechables",
-    "description": "Lo básico es lo más importante. Suaves, absorbentes y listos para la acción (¡mucha acción!).",
+    "name": "Pañales Desechables Talla 1 (2-5 kg)",
+    "description": "Perfectos para recién nacidos. Suaves, absorbentes y listos para los primeros días.",
+    "link": "https://www.amazon.es/dp/B0DJBYVG1Q",
+    "image": "https://m.media-amazon.com/images/I/81ZEJr84nXL._AC_SL1500_.jpg",
+    "stock": 3,
+    "priority": 1
+  },
+  {
+    "id": "baby-shower-033",
+    "name": "Pañales Desechables Talla 2 (3-6 kg)",
+    "description": "Para los primeros meses. Máxima absorción y comodidad para el bebé.",
     "link": "https://www.amazon.es/dp/B0976Z2GMQ",
     "image": "https://m.media-amazon.com/images/I/81ZEJr84nXL._AC_SL1500_.jpg",
-    "stock": 15,
+    "stock": 3,
+    "priority": 1
+  },
+  {
+    "id": "baby-shower-034",
+    "name": "Pañales Desechables Talla 3 (4-10 kg)",
+    "description": "La talla más usada. Suaves, absorbentes y perfectos para el día a día.",
+    "link": "https://www.amazon.es/dp/B0BVMNLZM1",
+    "image": "https://m.media-amazon.com/images/I/81ZEJr84nXL._AC_SL1500_.jpg",
+    "stock": 3,
+    "priority": 1
+  },
+  {
+    "id": "baby-shower-035",
+    "name": "Pañales Desechables Talla 4 (9-15 kg)",
+    "description": "Para bebés activos y en movimiento. ¡Listos para la acción!",
+    "link": "https://www.amazon.es/dp/B0BVMM5L8N",
+    "image": "https://m.media-amazon.com/images/I/81ZEJr84nXL._AC_SL1500_.jpg",
+    "stock": 3,
     "priority": 1
   },
   {
