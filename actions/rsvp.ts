@@ -17,8 +17,20 @@ export async function submitRSVP(
     });
 
     if (existingGuest) {
-      // Update existing guest and generate new token
       const token = await generateSessionToken();
+
+      if (!isAttending) {
+        const guestWithReservation = await prisma.guest.findUnique({
+          where: { email },
+          include: { reservation: true }
+        });
+
+        if (guestWithReservation?.reservation) {
+          await prisma.reservation.delete({
+            where: { id: guestWithReservation.reservation.id }
+          });
+        }
+      }
 
       await prisma.guest.update({
         where: { email },
@@ -32,6 +44,7 @@ export async function submitRSVP(
 
       await setSessionToken(token);
       revalidatePath('/');
+      revalidatePath('/gifts');
 
       return { success: true, isAttending, isUpdate: true };
     }

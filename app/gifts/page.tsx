@@ -7,6 +7,10 @@ import { getCurrentGuestReservation } from '@/actions/gifts';
 export default async function GiftsPage() {
   const guestStatus = await getCurrentGuestReservation();
 
+  if (guestStatus.hasSession && !guestStatus.isAttending) {
+    redirect('/rsvp/confirm');
+  }
+
   if (guestStatus.hasReservation && guestStatus.reservation) {
     redirect('/gifts/confirm');
   }
