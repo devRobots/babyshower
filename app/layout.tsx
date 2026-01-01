@@ -6,14 +6,28 @@ import type { Metadata } from "next";
 import { getConfig } from "@lib/config";
 
 
-const { parents, seo } = getConfig();
-const { mom, dad } = parents;
+const { baby, seo } = getConfig();
+const babyName = baby?.name;
 const { title, description, url } = seo;
 
 export const metadata: Metadata = {
-  title: `${title} | ${mom} & ${dad}`,
+  title: `${title} ${babyName}`,
   metadataBase: new URL(url),
-  description
+  description,
+  openGraph: {
+    title: `${title} ${babyName}`,
+    description,
+    url,
+    siteName: `${title} ${babyName}`,
+    locale: "es_ES",
+    type: "website",
+    images: "/favicon.ico",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: `${title} ${babyName}`,
+    description,
+  },
 };
 
 export default function RootLayout({

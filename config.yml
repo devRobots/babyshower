@@ -3,6 +3,7 @@ seo:
   title: "Baby Shower"
   description: "¡Acompáñanos a celebrar la llegada de nuestro bebé! Confirma tu asistencia y mira la lista de regalos."
   url: "https://url-de-tu-pagina.com"
+  image: favicon.ico
 
 # 2. Información de los Padres
 baby: 
@@ -15,6 +16,7 @@ parents:
 # 3. Detalles del Evento
 event:
   date: "Sábado, 7 de marzo"
+  dateISO: "2026-03-07"
   time: "15:00 - 19:00"
   location:
     address: "Avenida Jerez 54, Nuevo Baztán"
