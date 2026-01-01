@@ -1,4 +1,5 @@
 import GiftItem from "@components/landing/GiftItem";
+import GiftCarousel from "@components/landing/GiftCarousel";
 import prisma from '@lib/prisma';
 
 
@@ -14,7 +15,7 @@ export default async function GiftList() {
       { name: 'asc' }
     ]
   });
-  
+
   const gifts = allGifts.filter(gift => {
     return gift._count.reservations < gift.stock;
   });
@@ -27,7 +28,7 @@ export default async function GiftList() {
           Tu presencia es el mejor regalo, pero si deseas ayudarnos a darle la bienvenida a nuestro bebé, hemos preparado una lista de artículos que nos encantaría tener.
         </p>
       </section>
-      <section className="gift-list">
+      <GiftCarousel>
         {gifts.map((gift: any) => (
           <GiftItem
             key={gift.id}
@@ -38,7 +39,7 @@ export default async function GiftList() {
             link={gift.link}
           />
         ))}
-      </section>
+      </GiftCarousel>
     </section>
   );
 }

@@ -23,9 +23,6 @@ export default function GiftItem(props: GiftItemProps) {
           <h3 className="font-semibold text-pretty">{name}</h3>
           <p className="text-pretty text-black/60">{description}</p>
         </div>
-        <a href="/rsvp" className="button-secondary">
-          Elegir este regalo
-        </a>
       </main>
     </article>
   );
