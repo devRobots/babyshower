@@ -3,7 +3,7 @@
 import Link from 'next/link';
 import type { ConfirmationCardProps } from '@/types/components';
 
-export default function ConfirmationCard({ guest }: ConfirmationCardProps) {
+export default function ConfirmationCard({ guest, hasReservation }: ConfirmationCardProps) {
   const { isAttending, name } = guest;
 
   return (
@@ -27,9 +27,6 @@ export default function ConfirmationCard({ guest }: ConfirmationCardProps) {
 
           <div className="text-black/60 space-y-3 max-w-md">
             <p>
-              Tu respuesta ha sido registrada.
-            </p>
-            <p>
               {isAttending
                 ? "Estamos muy emocionados de compartir este momento tan especial contigo. Te esperamos con mucho cariño para celebrar juntos la llegada de nuestro bebé."
                 : "Aunque no puedas acompañarnos en persona, sigues siendo una parte muy especial de este momento. Tu cariño y buenos deseos significan mucho para nosotros."
@@ -47,10 +44,10 @@ export default function ConfirmationCard({ guest }: ConfirmationCardProps) {
             {isAttending ? (
               <>
                 <Link
-                  href="/gifts"
+                  href={hasReservation ? "/gifts/confirm" : "/gifts"}
                   className="button-primary text-center text-white w-full"
                 >
-                  Seleccionar un regalo
+                  {hasReservation ? "Ver mi regalo elegido" : "Seleccionar un regalo"}
                 </Link>
                 <Link
                   href="/rsvp"

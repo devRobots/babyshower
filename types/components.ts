@@ -20,6 +20,7 @@ export interface ConfirmationCardProps {
     isAttending: boolean;
     message: string | null;
   };
+  hasReservation?: boolean;
 }
 
 export interface GuestFormProps {

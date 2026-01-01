@@ -15,7 +15,7 @@ export default async function GiftConfirmationPage() {
 
   return (
     <main className="flex flex-col items-center justify-center bg-background py-8 md:py-0 px-4 md:px-16 lg:px-64 gap-3">
-      <div className="relative w-full bg-white border-4 border-secondary rounded-4xl shadow-lg p-8 md:p-12 overflow-hidden">
+      <div className="relative w-full md:w-120 bg-white border-4 border-secondary rounded-4xl shadow-lg p-8 md:p-12 overflow-hidden">
         <div className="absolute -bottom-8 -right-8 text-9xl opacity-20 pointer-events-none">
           🎁
         </div>
@@ -30,7 +30,8 @@ export default async function GiftConfirmationPage() {
           </h1>
 
           <p className="text-black/60">
-            Tu selección ha sido registrada con éxito.
+            Muchas gracias por tu generosidad. Tu regalo será muy especial
+            para nuestro bebé y nuestra familia.
           </p>
 
           {gift.link ? (
@@ -80,12 +81,7 @@ export default async function GiftConfirmationPage() {
             </div>
           )}
 
-          <p className="text-sm text-black/60">
-            Muchas gracias por tu generosidad. Tu regalo será muy especial
-            para nuestro bebé y nuestra familia.
-          </p>
-
-          <p className="text-sm font-medium text-primary">
+          <p className="font-medium text-primary">
             ¡Te lo agradecemos de corazón! 💝
           </p>
         </div>
