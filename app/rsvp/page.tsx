@@ -1,5 +1,6 @@
 import GuestForm from "@/components/rsvp/GuestForm";
 import ResponseCard from "@/components/rsvp/ResponseCard";
+
 import { getConfig } from "@lib/config";
 import { getCurrentGuest } from "@/actions/rsvp";
 

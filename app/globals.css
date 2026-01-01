@@ -80,7 +80,7 @@
   }
 
   main.rsvp {
-    @apply flex flex-col items-center justify-center min-h-screen w-full;
+    @apply flex flex-col items-center justify-center min-h-screen w-full -my-6 md:my-0;
   }
 
   button.button-primary {
@@ -92,6 +92,10 @@
   }
 
   a.button-secondary {
+    @apply w-full rounded-full px-4 py-2 font-bold text-sm text-primary bg-secondary text-center;
+  }
+
+  button.button-secondary {
     @apply w-full rounded-full px-4 py-2 font-bold text-sm text-primary bg-secondary text-center;
   }
 
@@ -161,5 +165,72 @@
     .radio-option:has(input:checked) {
       @apply bg-secondary border-primary;
     }
+  }
+
+  /* Guess Game Components */
+  section.guess-section {
+    @apply flex flex-col gap-6 mt-4 px-2 md:px-0;
+  }
+
+  .email-verification {
+    @apply flex flex-col md:flex-row gap-3 max-w-2xl;
+    input {
+      @apply flex-1 border border-secondary rounded-full px-4 py-2;
+    }
+  }
+
+  form.guess-form {
+    @apply flex flex-col gap-5 max-w-md bg-white p-6 rounded-3xl shadow-md border-2 border-secondary;
+
+    .form-field {
+      @apply flex flex-col gap-2;
+    }
+
+    .form-label {
+      @apply text-sm font-medium text-black/70;
+    }
+  }
+
+  article.guess-card {
+    @apply flex flex-col bg-white rounded-2xl shadow-sm p-4 gap-2 border border-secondary/30;
+
+    .guess-name {
+      @apply text-xs text-black/50 font-medium uppercase tracking-wide;
+    }
+
+    .guess-date {
+      @apply text-lg font-semibold text-primary capitalize;
+    }
+
+    .guess-time {
+      @apply text-sm text-black/60 font-mono;
+    }
+  }
+
+  section.guess-grid {
+    @apply grid grid-cols-2 md:grid-cols-4 gap-2 md:gap-6;
+  }
+
+  .notice-card {
+    @apply flex flex-col items-center gap-4 p-6 bg-secondary/20 rounded-3xl border-2 border-secondary max-w-md;
+    h3 { @apply font-semibold text-primary text-lg; }
+    p { @apply text-black/60 text-sm text-center; }
+  }
+
+  /* Override react-datepicker to match theme */
+  .react-datepicker__input-container input {
+    @apply border border-secondary rounded-full px-4 py-2 w-full;
+  }
+
+  .react-datepicker {
+    @apply border-2 border-secondary rounded-2xl;
+  }
+
+  .react-datepicker__header {
+    @apply bg-secondary border-b-2 border-primary/20 rounded-t-2xl;
+  }
+
+  .react-datepicker__day--selected {
+    @apply bg-primary;
   }
 }
