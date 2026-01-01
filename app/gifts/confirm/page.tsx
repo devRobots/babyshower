@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
+import ChangeSelectionButton from '@/components/gifts/ChangeSelectionButton';
 
 import { redirect } from 'next/navigation';
 import { getCurrentGuestReservation } from '@/actions/gifts';
@@ -34,56 +35,32 @@ export default async function GiftConfirmationPage() {
             para nuestro bebé y nuestra familia.
           </p>
 
-          {gift.link ? (
-            <a
-              href={gift.link}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-secondary/30 rounded-2xl p-4 w-full max-w-xs block hover:bg-secondary/40 transition-colors cursor-pointer"
-            >
-              {gift.image && (
-                <Image
-                  src={gift.image}
-                  alt={gift.name}
-                  width={100}
-                  height={100}
-                  className="rounded-3xl mx-auto aspect-square p-4 bg-white mb-3 object-contain"
-                />
-              )}
-              <p className="font-semibold text-lg text-black/80">
-                {gift.name}
-              </p>
-              {gift.description && (
-                <p className="text-sm text-black/60 mt-2">
-                  {gift.description}
-                </p>
-              )}
-            </a>
-          ) : (
-            <div className="bg-secondary/30 rounded-2xl p-4 w-full max-w-xs">
-              {gift.image && (
-                <Image
-                  src={gift.image}
-                  alt={gift.name}
-                  width={100}
-                  height={100}
-                  className="rounded-3xl mx-auto aspect-square p-4 bg-white mb-3 object-contain"
-                />
-              )}
-              <p className="font-semibold text-lg text-black/80">
-                {gift.name}
-              </p>
-              {gift.description && (
-                <p className="text-sm text-black/60 mt-2">
-                  {gift.description}
-                </p>
-              )}
-            </div>
-          )}
+          <a
+            href={gift.link || '#'}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-secondary/30 rounded-2xl p-4 w-full max-w-xs block hover:bg-secondary/40 transition-colors cursor-pointer"
+          >
+            <Image
+              src={gift.image || ''}
+              alt={gift.name}
+              width={100}
+              height={100}
+              className="rounded-3xl mx-auto aspect-square p-4 bg-white mb-3 object-contain"
+            />
+            <p className="font-semibold text-lg text-black/80">
+              {gift.name}
+            </p>
+            <p className="text-sm text-black/60 mt-2">
+              {gift.description}
+            </p>
+          </a>
 
           <p className="font-medium text-primary">
             ¡Te lo agradecemos de corazón! 💝
           </p>
+
+          <ChangeSelectionButton />
         </div>
       </div>
 
