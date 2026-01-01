@@ -5,6 +5,9 @@ seo:
   url: "https://url-de-tu-pagina.com"
 
 # 2. Información de los Padres
+baby: 
+  name: "Coraline"
+  gender: "Girl"
 parents:
   mom: "Sayreth"
   dad: "Fran"

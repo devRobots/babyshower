@@ -3,11 +3,11 @@ import { getCurrentGuest } from "@/actions/rsvp";
 import Link from "next/link";
 
 export default async function Hero() {
-  const { parents } = getConfig();
+  const { parents, baby } = getConfig();
+  const { name } = baby;
   const { mom, dad } = parents;
   const currentGuest = await getCurrentGuest();
 
-  // Determine button text and link based on RSVP status
   const getButtonConfig = () => {
     if (!currentGuest) {
       return {
@@ -17,7 +17,7 @@ export default async function Hero() {
     }
 
     return {
-      text: "Ver mi Confirmación",
+      text: "Ver mi confirmación",
       href: "/rsvp/confirm"
     };
   };
@@ -35,7 +35,7 @@ export default async function Hero() {
       <h1 className="hero-title relative z-10">
         Estás Invitado al Baby Shower de {mom} & {dad}
       </h1>
-      <span className="relative z-10">¡Celebrando la futura llegada de su pequeño!</span>
+      <span className="relative z-10">¡Celebrando la futura llegada de {name}!</span>
       <Link href={buttonConfig.href} className="button-primary relative z-10">
         {buttonConfig.text}
       </Link>

@@ -1,8 +1,10 @@
 import "./globals.css";
 
+import Footer from "@components/Footer";
+
 import type { Metadata } from "next";
 import { getConfig } from "@lib/config";
-import Footer from "@components/Footer";
+
 
 const { parents, seo } = getConfig();
 const { mom, dad } = parents;

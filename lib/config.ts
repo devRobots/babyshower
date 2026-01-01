@@ -8,6 +8,10 @@ export interface Config {
     description: string;
     url: string;
   };
+  baby: {
+    name: string;
+    gender: string;
+  }
   parents: {
     mom: string;
     dad: string;
