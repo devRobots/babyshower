@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     siteName: `${title} ${babyName}`,
     locale: "es_ES",
     type: "website",
-    images: "/favicon.ico",
+    images: [{ url: "/hero.webp" }],
   },
   twitter: {
     card: "summary_large_image",
