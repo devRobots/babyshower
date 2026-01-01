@@ -1,13 +1,15 @@
 import prisma from '@lib/prisma';
 import GiftGrid from '@/components/gifts/GiftGrid';
 
-interface GiftsPageProps {
-  searchParams: Promise<{ guestId?: string }>;
-}
+import { redirect } from 'next/navigation';
+import { getCurrentGuestReservation } from '@/actions/gifts';
 
-export default async function GiftsPage({ searchParams }: GiftsPageProps) {
-  const params = await searchParams;
-  const guestId = params.guestId;
+export default async function GiftsPage() {
+  const guestStatus = await getCurrentGuestReservation();
+
+  if (guestStatus.hasReservation && guestStatus.reservation) {
+    redirect('/gifts/confirm');
+  }
 
   const gifts = await prisma.giftItem.findMany({
     include: {
@@ -22,9 +24,13 @@ export default async function GiftsPage({ searchParams }: GiftsPageProps) {
   });
 
   return (
-    <main className="min-h-screen bg-background py-8 px-4 md:py-12 md:px-8 lg:px-16">
+    <main className="min-h-screen bg-background py-8 md:py-0 px-4 md:px-8 lg:px-16 content-center">
       <div className="max-w-6xl mx-auto">
-        <GiftGrid gifts={gifts} guestId={guestId} />
+        <GiftGrid
+          gifts={gifts}
+          hasSession={guestStatus.hasSession}
+          isAttending={guestStatus.isAttending}
+        />
       </div>
     </main>
   );
