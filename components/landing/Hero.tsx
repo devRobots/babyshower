@@ -1,8 +1,28 @@
 import { getConfig } from "@lib/config";
+import { getCurrentGuest } from "@/actions/rsvp";
+import Link from "next/link";
 
-export default function Hero() {
+export default async function Hero() {
   const { parents } = getConfig();
   const { mom, dad } = parents;
+  const currentGuest = await getCurrentGuest();
+
+  // Determine button text and link based on RSVP status
+  const getButtonConfig = () => {
+    if (!currentGuest) {
+      return {
+        text: "Confirmar Asistencia",
+        href: "/rsvp"
+      };
+    }
+
+    return {
+      text: "Ver mi Confirmación",
+      href: "/rsvp/confirm"
+    };
+  };
+
+  const buttonConfig = getButtonConfig();
 
   return (
     <section className="hero relative lg:aspect-3/1 overflow-hidden">
@@ -16,7 +36,9 @@ export default function Hero() {
         Estás Invitado al Baby Shower de {mom} & {dad}
       </h1>
       <span className="relative z-10">¡Celebrando la futura llegada de su pequeño!</span>
-      <a href="/rsvp" className="button-primary relative z-10">Confirmar Asistencia</a>
+      <Link href={buttonConfig.href} className="button-primary relative z-10">
+        {buttonConfig.text}
+      </Link>
     </section>
   );
 }

@@ -13,8 +13,10 @@ model Guest {
   email        String    @unique
   isAttending  Boolean
   message      String?
+  sessionToken String    @unique
 
   reservation  Reservation?
+  guess        Guess?
 }
 
 model GiftItem {
@@ -39,4 +41,15 @@ model Reservation {
 
   giftId    String
   gift      GiftItem @relation(fields: [giftId], references: [id])
+}
+
+model Guess {
+  id            String   @id @default(cuid())
+  createdAt     DateTime @default(now())
+
+  guestId       String   @unique
+  guest         Guest    @relation(fields: [guestId], references: [id], onDelete: Cascade)
+
+  guessedDate   DateTime
+  guessedTime   String
 }

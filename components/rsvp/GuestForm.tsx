@@ -1,18 +1,43 @@
 "use client";
 
+import { useState } from 'react';
 import { useRouter } from 'next/navigation';
+import { submitRSVP } from '@/actions/rsvp';
 
-export default function GuestForm() {
+interface GuestFormProps {
+  initialData?: {
+    name: string;
+    email: string;
+    isAttending: boolean;
+    message: string | null;
+  } | null;
+}
+
+export default function GuestForm({ initialData }: GuestFormProps) {
   const router = useRouter();
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState('');
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    setLoading(true);
+    setError('');
 
     const formData = new FormData(e.currentTarget);
-    const attending = formData.get('attending') === 'yes';
+    const name = formData.get('name') as string;
+    const email = formData.get('email') as string;
+    const isAttending = formData.get('attending') === 'yes';
+    const message = formData.get('message') as string;
 
-    console.log("Formulario enviado", Object.fromEntries(formData));
-    router.push(`/rsvp/confirm?attending=${attending}`);
+    const result = await submitRSVP(name, email, isAttending, message);
+
+    setLoading(false);
+
+    if (result.success) {
+      router.push('/rsvp/confirm');
+    } else {
+      setError(result.error || 'Error al enviar confirmación');
+    }
   };
 
   return (
@@ -26,6 +51,7 @@ export default function GuestForm() {
           id="name"
           name="name"
           placeholder="Ej: María García"
+          defaultValue={initialData?.name || ''}
           required
         />
       </div>
@@ -39,8 +65,16 @@ export default function GuestForm() {
           id="email"
           name="email"
           placeholder="correo@ejemplo.com"
+          defaultValue={initialData?.email || ''}
           required
+          readOnly={!!initialData}
+          className={initialData ? 'bg-gray-100 cursor-not-allowed' : ''}
         />
+        {initialData && (
+          <p className="text-xs text-black/50 mt-1">
+            El correo no se puede modificar
+          </p>
+        )}
       </div>
 
       <fieldset className="form-field">
@@ -55,6 +89,7 @@ export default function GuestForm() {
               id="attending_yes"
               name="attending"
               value="yes"
+              defaultChecked={initialData?.isAttending === true}
               required
             />
             <span>Sí, asistiré</span>
@@ -66,6 +101,7 @@ export default function GuestForm() {
               id="attending_no"
               name="attending"
               value="no"
+              defaultChecked={initialData?.isAttending === false}
               required
             />
             <span>No podré asistir</span>
@@ -83,11 +119,22 @@ export default function GuestForm() {
           name="message"
           rows={4}
           placeholder="Comparte tus buenos deseos, menciona invitados adicionales, o cualquier mensaje especial..."
+          defaultValue={initialData?.message || ''}
         />
       </div>
 
-      <button type="submit" className="button-primary w-full">
-        Enviar Confirmación
+      {error && (
+        <div className="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded-2xl text-sm">
+          {error}
+        </div>
+      )}
+
+      <button
+        type="submit"
+        className="button-primary w-full disabled:opacity-50"
+        disabled={loading}
+      >
+        {loading ? 'Guardando...' : (initialData ? 'Actualizar Confirmación' : 'Enviar Confirmación')}
       </button>
     </form>
   );

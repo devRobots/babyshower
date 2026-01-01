@@ -3,10 +3,17 @@
 import Link from 'next/link';
 
 interface ConfirmationCardProps {
-  isAttending: boolean;
+  guest: {
+    name: string;
+    email: string;
+    isAttending: boolean;
+    message: string | null;
+  };
 }
 
-export default function ConfirmationCard({ isAttending }: ConfirmationCardProps) {
+export default function ConfirmationCard({ guest }: ConfirmationCardProps) {
+  const { isAttending, name } = guest;
+
   return (
     <div className="relative w-full bg-white border-4 border-secondary rounded-4xl shadow-lg p-8 md:p-12 overflow-hidden">
       <div className="absolute -bottom-8 -right-8 text-9xl opacity-20 pointer-events-none">
@@ -20,7 +27,7 @@ export default function ConfirmationCard({ isAttending }: ConfirmationCardProps)
 
         <h1 className="text-2xl md:text-3xl font-bold text-black/80">
           {isAttending
-            ? '¡Nos alegra contar contigo!'
+            ? `¡Nos alegra contar contigo, ${name.split(' ')[0]}!`
             : 'Lamentamos que no puedas estar'
           }
         </h1>
@@ -44,17 +51,25 @@ export default function ConfirmationCard({ isAttending }: ConfirmationCardProps)
         </div>
 
         <div className="flex flex-col items-center gap-4 mt-4 w-full max-w-xs">
-          <Link
-            href={isAttending ? "/gifts" : "/rsvp"}
-            className="button-primary text-center text-white w-full"
-          >
-            {isAttending ? "Seleccionar un regalo" : "Cambié de opinión"}
-          </Link>
-
-          {isAttending && (
+          {isAttending ? (
+            <>
+              <Link
+                href="/gifts"
+                className="button-primary text-center text-white w-full"
+              >
+                Seleccionar un regalo
+              </Link>
+              <Link
+                href="/rsvp"
+                className="button-secondary text-center"
+              >
+                Modificar mi respuesta
+              </Link>
+            </>
+          ) : (
             <Link
               href="/rsvp"
-              className="button-secondary text-center"
+              className="button-primary text-center text-white w-full"
             >
               Cambié de opinión
             </Link>
