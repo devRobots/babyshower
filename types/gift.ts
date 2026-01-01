@@ -4,7 +4,6 @@ export interface Gift {
   description: string | null;
   image: string | null;
   link: string | null;
-  price: number | null;
   stock: number;
   priority: number;
   _count: {
@@ -16,7 +15,6 @@ export interface GiftItemProps {
   name: string;
   description: string;
   image: string;
-  price: number;
   link: string;
 }
 

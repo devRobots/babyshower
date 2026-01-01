@@ -35,7 +35,6 @@ export default async function GiftList() {
             name={gift.name}
             description={gift.description || ''}
             image={gift.image || ''}
-            price={gift.price || 0}
             link={gift.link || ''}
           />
         ))}
