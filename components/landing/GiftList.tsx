@@ -1,7 +1,7 @@
 import GiftItem from "@components/landing/GiftItem";
 import GiftCarousel from "@components/landing/GiftCarousel";
 import prisma from '@lib/prisma';
-
+import type { Gift } from '@/types/gift';
 
 export default async function GiftList() {
   const allGifts = await prisma.giftItem.findMany({
@@ -29,14 +29,14 @@ export default async function GiftList() {
         </p>
       </section>
       <GiftCarousel>
-        {gifts.map((gift: any) => (
+        {gifts.map((gift: Gift) => (
           <GiftItem
             key={gift.id}
             name={gift.name}
-            description={gift.description}
-            image={gift.image}
+            description={gift.description || ''}
+            image={gift.image || ''}
             price={gift.price || 0}
-            link={gift.link}
+            link={gift.link || ''}
           />
         ))}
       </GiftCarousel>

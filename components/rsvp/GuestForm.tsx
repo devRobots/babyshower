@@ -3,15 +3,7 @@
 import { useState } from 'react';
 import { useRouter } from 'next/navigation';
 import { submitRSVP } from '@/actions/rsvp';
-
-interface GuestFormProps {
-  initialData?: {
-    name: string;
-    email: string;
-    isAttending: boolean;
-    message: string | null;
-  } | null;
-}
+import type { GuestFormProps } from '@/types/components';
 
 export default function GuestForm({ initialData }: GuestFormProps) {
   const router = useRouter();

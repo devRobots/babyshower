@@ -1,15 +1,7 @@
 'use client';
 
 import Link from 'next/link';
-
-interface ConfirmationCardProps {
-  guest: {
-    name: string;
-    email: string;
-    isAttending: boolean;
-    message: string | null;
-  };
-}
+import type { ConfirmationCardProps } from '@/types/components';
 
 export default function ConfirmationCard({ guest }: ConfirmationCardProps) {
   const { isAttending, name } = guest;

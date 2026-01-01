@@ -1,12 +1,5 @@
 import { Icon } from "@iconify/react";
-
-interface InfoItemProps {
-  icon: string;
-  body: string;
-  desc: string;
-  className?: string;
-  children?: React.ReactNode;
-}
+import type { InfoItemProps } from '@/types/components';
 
 export default function InfoItem(props: InfoItemProps) {
   const { icon, body, desc, className, children } = props;

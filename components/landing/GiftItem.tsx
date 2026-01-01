@@ -1,12 +1,5 @@
 import Image from "next/image";
-
-export interface GiftItemProps {
-  name: string;
-  description: string;
-  image: string;
-  price: number;
-  link: string;
-}
+import type { GiftItemProps } from '@/types/gift';
 
 export default function GiftItem(props: GiftItemProps) {
   const { name, description, image } = props;

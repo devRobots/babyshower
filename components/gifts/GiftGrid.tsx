@@ -1,31 +1,14 @@
 'use client';
 
-import { useState } from 'react';
-import { useRouter } from 'next/navigation';
-import { reserveGift } from '@/actions/gifts';
-
 import Link from 'next/link';
 import GiftCard from '@/components/gifts/GiftCard';
 import GiftDetailModal from '@/components/gifts/GiftDetailModal';
 import NoticeCard from '@/components/NoticeCard';
 
-interface Gift {
-  id: string;
-  name: string;
-  description: string | null;
-  image: string | null;
-  link: string | null;
-  stock: number;
-  _count: {
-    reservations: number;
-  };
-}
-
-interface GiftGridProps {
-  gifts: Gift[];
-  hasSession: boolean;
-  isAttending: boolean;
-}
+import { useState } from 'react';
+import { useRouter } from 'next/navigation';
+import { reserveGift } from '@/actions/gifts';
+import type { Gift, GiftGridProps } from '@/types/gift';
 
 export default function GiftGrid({
   gifts,

@@ -1,12 +1,5 @@
 import Link from 'next/link';
-
-interface NoticeCardProps {
-  title: string;
-  message: string;
-  additionalMessage?: React.ReactNode;
-  actionButtonText: string;
-  actionButtonHref: string;
-}
+import type { NoticeCardProps } from '@/types/components';
 
 export default function NoticeCard({
   title,

@@ -1,26 +1,7 @@
 'use client';
 
 import Image from 'next/image';
-
-interface Gift {
-  id: string;
-  name: string;
-  description: string | null;
-  image: string | null;
-  link: string | null;
-  stock: number;
-  _count: {
-    reservations: number;
-  };
-}
-
-interface GiftDetailModalProps {
-  gift: Gift | null;
-  isOpen: boolean;
-  onClose: () => void;
-  onConfirm: () => void;
-  isSubmitting: boolean;
-}
+import type { GiftDetailModalProps } from '@/types/gift';
 
 export default function GiftDetailModal({
   gift,

@@ -1,17 +1,7 @@
 'use client';
 
 import Image from 'next/image';
-
-interface GiftCardProps {
-  id: string;
-  name: string;
-  description?: string | null;
-  image?: string | null;
-  isReserved: boolean;
-  stock?: number;
-  availableCount?: number;
-  onClick: () => void;
-}
+import type { GiftCardProps } from '@/types/gift';
 
 export default function GiftCard({
   id,
