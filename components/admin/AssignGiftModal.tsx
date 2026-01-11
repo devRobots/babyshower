@@ -12,7 +12,7 @@ interface Guest {
     gift: {
       name: string;
     };
-  };
+  } | null;
 }
 
 interface Gift {
