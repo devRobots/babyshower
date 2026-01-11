@@ -3,6 +3,7 @@
 import prisma from '@lib/prisma';
 import { getSessionToken } from '@lib/session';
 import { revalidatePath } from 'next/cache';
+import { sendGiftSelection, sendParentsNotification } from '@/lib/emails';
 
 export async function reserveGift(giftId: string) {
   const token = await getSessionToken();
@@ -62,6 +63,23 @@ export async function reserveGift(giftId: string) {
     revalidatePath('/');
     revalidatePath('/gifts');
 
+    // Send confirmation emails
+    await sendGiftSelection({
+      to: guest.email,
+      guestName: guest.name,
+      giftName: gift.name,
+      giftDescription: gift.description,
+      giftImage: gift.image,
+      giftLink: gift.link,
+    });
+
+    await sendParentsNotification({
+      type: 'gift-selection',
+      guestName: guest.name,
+      guestEmail: guest.email,
+      giftName: gift.name,
+    });
+
     return { success: true };
   } catch (error) {
     console.error('Error reserving gift:', error);
@@ -108,7 +126,11 @@ export async function cancelReservation() {
   try {
     const guest = await prisma.guest.findUnique({
       where: { sessionToken: token },
-      include: { reservation: true }
+      include: {
+        reservation: {
+          include: { gift: true }
+        }
+      }
     });
 
     if (!guest) {
@@ -119,6 +141,9 @@ export async function cancelReservation() {
       return { success: false, error: 'No tienes ninguna reserva' };
     }
 
+    // Store gift info before deletion
+    const previousGiftName = guest.reservation.gift.name;
+
     // Delete the reservation
     await prisma.reservation.delete({
       where: { id: guest.reservation.id }
@@ -126,6 +151,14 @@ export async function cancelReservation() {
 
     revalidatePath('/');
     revalidatePath('/gifts');
+
+    // Notify parents about gift change
+    await sendParentsNotification({
+      type: 'gift-change',
+      guestName: guest.name,
+      guestEmail: guest.email,
+      giftName: previousGiftName,
+    });
 
     return { success: true };
   } catch (error) {

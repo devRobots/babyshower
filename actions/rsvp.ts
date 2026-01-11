@@ -3,6 +3,7 @@
 import prisma from '@lib/prisma';
 import { generateSessionToken, setSessionToken } from '@lib/session';
 import { revalidatePath } from 'next/cache';
+import { sendRSVPConfirmation, sendRSVPUpdate, sendParentsNotification } from '@/lib/emails';
 
 export async function submitRSVP(
   name: string,
@@ -18,6 +19,7 @@ export async function submitRSVP(
 
     if (existingGuest) {
       const token = await generateSessionToken();
+      const previousStatus = existingGuest.isAttending;
 
       if (!isAttending) {
         const guestWithReservation = await prisma.guest.findUnique({
@@ -46,10 +48,25 @@ export async function submitRSVP(
       revalidatePath('/');
       revalidatePath('/gifts');
 
+      await sendRSVPUpdate({
+        to: email,
+        guestName: name,
+        isAttending,
+        previousStatus,
+      });
+
+      await sendParentsNotification({
+        type: 'rsvp-update',
+        guestName: name,
+        guestEmail: email,
+        isAttending,
+        previousStatus,
+        message,
+      });
+
       return { success: true, isAttending, isUpdate: true };
     }
 
-    // Create new guest
     const token = await generateSessionToken();
 
     await prisma.guest.create({
@@ -64,6 +81,21 @@ export async function submitRSVP(
 
     await setSessionToken(token);
     revalidatePath('/');
+
+    await sendRSVPConfirmation({
+      to: email,
+      guestName: name,
+      isAttending,
+      message,
+    });
+
+    await sendParentsNotification({
+      type: 'rsvp',
+      guestName: name,
+      guestEmail: email,
+      isAttending,
+      message,
+    });
 
     return { success: true, isAttending, isUpdate: false };
   } catch (error) {
