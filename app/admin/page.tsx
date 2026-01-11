@@ -177,9 +177,6 @@ export default async function AdminPage({ searchParams }: PageProps) {
                       Email
                     </th>
                     <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                      Mensaje
-                    </th>
-                    <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
                       Regalo
                     </th>
                   </tr>
@@ -192,9 +189,6 @@ export default async function AdminPage({ searchParams }: PageProps) {
                       </td>
                       <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-600">
                         {guest.email}
-                      </td>
-                      <td className="px-6 py-4 text-sm text-gray-600 max-w-xs">
-                        {guest.message || '-'}
                       </td>
                       <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-600">
                         {guest.reservation ? (
@@ -221,9 +215,6 @@ export default async function AdminPage({ searchParams }: PageProps) {
                 <div key={guest.id} className="border border-gray-200 rounded-lg p-3">
                   <div className="font-medium text-gray-900 mb-1 text-sm">{guest.name}</div>
                   <div className="text-xs text-gray-600 mb-2 break-all">{guest.email}</div>
-                  {guest.message && (
-                    <div className="text-xs text-gray-600 mb-2 italic">"{guest.message}"</div>
-                  )}
                   {guest.reservation ? (
                     <span className="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium bg-blue-100 text-blue-800">
                       {guest.reservation.gift.name}
@@ -258,7 +249,7 @@ export default async function AdminPage({ searchParams }: PageProps) {
                       Email
                     </th>
                     <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                      Mensaje
+                      Regalo
                     </th>
                   </tr>
                 </thead>
@@ -272,7 +263,7 @@ export default async function AdminPage({ searchParams }: PageProps) {
                         {guest.email}
                       </td>
                       <td className="px-6 py-4 text-sm text-gray-600 max-w-xs">
-                        {guest.message || '-'}
+                        {guest.reservation?.gift?.name || '-'}
                       </td>
                     </tr>
                   ))}
@@ -290,9 +281,6 @@ export default async function AdminPage({ searchParams }: PageProps) {
                 <div key={guest.id} className="border border-gray-200 rounded-lg p-3">
                   <div className="font-medium text-gray-900 mb-1 text-sm">{guest.name}</div>
                   <div className="text-xs text-gray-600 mb-2 break-all">{guest.email}</div>
-                  {guest.message && (
-                    <div className="text-xs text-gray-600 italic">"{guest.message}"</div>
-                  )}
                 </div>
               ))}
               {notAttendingGuests.length === 0 && (
@@ -318,9 +306,6 @@ export default async function AdminPage({ searchParams }: PageProps) {
                     Regalo
                   </th>
                   <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                    Descripción
-                  </th>
-                  <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
                     Invitado(s)
                   </th>
                   <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
@@ -337,16 +322,14 @@ export default async function AdminPage({ searchParams }: PageProps) {
                     <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
                       {gift.name}
                     </td>
-                    <td className="px-6 py-4 text-sm text-gray-600 max-w-xs">
-                      {gift.description || '-'}
-                    </td>
                     <td className="px-6 py-4 text-sm text-gray-900">
                       <div className="space-y-1">
                         {reservations.map((reservation) => (
                           <div key={reservation.id}>
                             <span className="font-medium">{reservation.guest.name}</span>
-                            <span className="text-gray-500 text-xs ml-2">
-                              ({reservation.guest.email})
+                            <br/>
+                            <span className="text-gray-500 text-xs">
+                            {reservation.guest.email}
                             </span>
                           </div>
                         ))}
