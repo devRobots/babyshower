@@ -3,6 +3,7 @@ import { getAdminData } from '@/actions/admin';
 import { getConfig } from '@/lib/config';
 import { format } from 'date-fns';
 import { es } from 'date-fns/locale';
+import AdminGiftManagement from '@/components/admin/AdminGiftManagement';
 
 interface PageProps {
   searchParams: Promise<{ secret?: string }>;
@@ -31,12 +32,6 @@ export default async function AdminPage({ searchParams }: PageProps) {
       gift,
       reservations: gift.reservations,
     }));
-
-  // Regalos pendientes (sin reservas o con stock disponible)
-  const pendingGifts = data.gifts.filter((g) => {
-    const reservedCount = g.reservations.length;
-    return reservedCount < g.stock;
-  });
 
   return (
     <div className="min-h-screen py-4 sm:py-8 px-2 sm:px-4 lg:px-8">
@@ -386,9 +381,6 @@ export default async function AdminPage({ searchParams }: PageProps) {
             {selectedGifts.map(({ gift, reservations }) => (
               <div key={gift.id} className="border border-gray-200 rounded-lg p-3">
                 <div className="font-medium text-gray-900 mb-2 text-sm">{gift.name}</div>
-                {gift.description && (
-                  <div className="text-xs text-gray-600 mb-2">{gift.description}</div>
-                )}
                 <div className="mb-2">
                   <div className="text-xs font-medium text-gray-500 mb-1">Reservado por:</div>
                   {reservations.map((reservation) => (
@@ -419,56 +411,9 @@ export default async function AdminPage({ searchParams }: PageProps) {
           </div>
         </div>
 
-        {/* Sección 4: Regalos Pendientes */}
+        {/* Sección 4: Gestión de Regalos (Admin) */}
         <div className="bg-white rounded-lg shadow mb-4 sm:mb-8 p-3 sm:p-6">
-          <h2 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-4 sm:mb-6">
-            Regalos Pendientes ({data.stats.availableGifts})
-          </h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4">
-            {pendingGifts.map((gift) => {
-              const reservedCount = gift.reservations.length;
-              const availableCount = gift.stock - reservedCount;
-
-              return (
-                <div
-                  key={gift.id}
-                  className="border border-gray-200 rounded-lg p-3 sm:p-4 hover:shadow-md transition-shadow"
-                >
-                  {gift.image && (
-                    <img
-                      src={gift.image}
-                      alt={gift.name}
-                      className="w-full h-24 sm:h-32 object-cover rounded-md mb-2 sm:mb-3"
-                    />
-                  )}
-                  <h3 className="font-semibold text-gray-900 mb-1 sm:mb-2 text-sm sm:text-base">{gift.name}</h3>
-                  {gift.description && (
-                    <p className="text-xs sm:text-sm text-gray-600 mb-2 sm:mb-3">{gift.description}</p>
-                  )}
-                  <div className="flex items-center justify-between">
-                    <span className="text-xs sm:text-sm text-gray-500">
-                      Disponible: {availableCount} / {gift.stock}
-                    </span>
-                    {gift.link && (
-                      <a
-                        href={gift.link}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-xs sm:text-sm text-blue-600 hover:underline"
-                      >
-                        Ver enlace
-                      </a>
-                    )}
-                  </div>
-                </div>
-              );
-            })}
-          </div>
-          {pendingGifts.length === 0 && (
-            <p className="text-center py-6 sm:py-8 text-sm sm:text-base text-gray-500">
-              ¡Todos los regalos han sido seleccionados!
-            </p>
-          )}
+          <AdminGiftManagement gifts={data.gifts} guests={data.guests} />
         </div>
       </div>
     </div>
