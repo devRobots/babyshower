@@ -39,71 +39,71 @@ export default async function AdminPage({ searchParams }: PageProps) {
   });
 
   return (
-    <div className="min-h-screen py-8 px-4 sm:px-6 lg:px-8">
+    <div className="min-h-screen py-4 sm:py-8 px-2 sm:px-4 lg:px-8">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
-        <div className="mb-8">
-          <h1 className="text-3xl font-bold text-gray-900">Panel de Administración</h1>
-          <p className="mt-2 text-sm text-gray-600">
+        <div className="mb-4 sm:mb-8">
+          <h1 className="text-2xl sm:text-3xl font-bold text-gray-900">Panel de Administración</h1>
+          <p className="mt-2 text-xs sm:text-sm text-gray-600">
             Baby Shower - {config.baby.name}
           </p>
         </div>
 
         {/* Sección 1: Configuración Visual */}
-        <div className="bg-white rounded-lg shadow mb-8 p-6">
-          <h2 className="text-2xl font-semibold text-gray-900 mb-6">Configuración del Evento</h2>
+        <div className="bg-white rounded-lg shadow mb-4 sm:mb-8 p-3 sm:p-6">
+          <h2 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-4 sm:mb-6">Configuración del Evento</h2>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-6">
             {/* Información del Bebé */}
-            <div className="border border-gray-200 rounded-lg p-4">
-              <h3 className="text-sm font-medium text-gray-500 mb-3">Bebé</h3>
-              <div className="space-y-2">
-                <p className="text-lg">
+            <div className="border border-gray-200 rounded-lg p-3 sm:p-4">
+              <h3 className="text-xs sm:text-sm font-medium text-gray-500 mb-2 sm:mb-3">Bebé</h3>
+              <div className="space-y-1 sm:space-y-2">
+                <p className="text-sm sm:text-lg">
                   <span className="font-semibold">Nombre:</span> {config.baby.name}
                 </p>
-                <p className="text-lg">
+                <p className="text-sm sm:text-lg">
                   <span className="font-semibold">Género:</span> {config.baby.gender}
                 </p>
               </div>
             </div>
 
             {/* Información de los Padres */}
-            <div className="border border-gray-200 rounded-lg p-4">
-              <h3 className="text-sm font-medium text-gray-500 mb-3">Padres</h3>
-              <div className="space-y-2">
-                <p className="text-lg">
+            <div className="border border-gray-200 rounded-lg p-3 sm:p-4">
+              <h3 className="text-xs sm:text-sm font-medium text-gray-500 mb-2 sm:mb-3">Padres</h3>
+              <div className="space-y-1 sm:space-y-2">
+                <p className="text-sm sm:text-lg">
                   <span className="font-semibold">Mamá:</span> {config.parents.mom}
                 </p>
-                <p className="text-lg">
+                <p className="text-sm sm:text-lg">
                   <span className="font-semibold">Papá:</span> {config.parents.dad}
                 </p>
               </div>
             </div>
 
             {/* Información del Evento */}
-            <div className="border border-gray-200 rounded-lg p-4">
-              <h3 className="text-sm font-medium text-gray-500 mb-3">Evento</h3>
-              <div className="space-y-2">
-                <p className="text-lg">
+            <div className="border border-gray-200 rounded-lg p-3 sm:p-4">
+              <h3 className="text-xs sm:text-sm font-medium text-gray-500 mb-2 sm:mb-3">Evento</h3>
+              <div className="space-y-1 sm:space-y-2">
+                <p className="text-sm sm:text-lg">
                   <span className="font-semibold">Fecha:</span> {config.event.date}
                 </p>
-                <p className="text-lg">
+                <p className="text-sm sm:text-lg">
                   <span className="font-semibold">Hora:</span> {config.event.time}
                 </p>
-                <p className="text-sm text-gray-600 mt-2">
+                <p className="text-xs sm:text-sm text-gray-600 mt-1 sm:mt-2">
                   {config.event.location.address}
                 </p>
               </div>
             </div>
 
             {/* Recordatorios */}
-            <div className="border border-gray-200 rounded-lg p-4">
-              <h3 className="text-sm font-medium text-gray-500 mb-3">Recordatorios</h3>
-              <div className="flex flex-wrap gap-2">
+            <div className="border border-gray-200 rounded-lg p-3 sm:p-4">
+              <h3 className="text-xs sm:text-sm font-medium text-gray-500 mb-2 sm:mb-3">Recordatorios</h3>
+              <div className="flex flex-wrap gap-1.5 sm:gap-2">
                 {config.reminders.days.map((day) => (
                   <span
                     key={day}
-                    className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-blue-100 text-blue-800"
+                    className="inline-flex items-center px-2 sm:px-3 py-0.5 sm:py-1 rounded-full text-xs sm:text-sm font-medium bg-blue-100 text-blue-800"
                   >
                     {day} {day === 1 ? 'día' : 'días'} antes
                   </span>
@@ -112,20 +112,20 @@ export default async function AdminPage({ searchParams }: PageProps) {
             </div>
 
             {/* SEO */}
-            <div className="border border-gray-200 rounded-lg p-4">
-              <h3 className="text-sm font-medium text-gray-500 mb-3">SEO</h3>
-              <div className="space-y-2">
-                <p className="text-sm">
+            <div className="border border-gray-200 rounded-lg p-3 sm:p-4">
+              <h3 className="text-xs sm:text-sm font-medium text-gray-500 mb-2 sm:mb-3">SEO</h3>
+              <div className="space-y-1 sm:space-y-2">
+                <p className="text-xs sm:text-sm">
                   <span className="font-semibold">Título:</span> {config.seo.title}
                 </p>
-                <p className="text-sm text-gray-600">
+                <p className="text-xs sm:text-sm text-gray-600 break-words">
                   {config.seo.description}
                 </p>
                 <a
                   href={config.seo.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-sm text-blue-600 hover:underline"
+                  className="text-xs sm:text-sm text-blue-600 hover:underline break-all block"
                 >
                   {config.seo.url}
                 </a>
@@ -133,25 +133,25 @@ export default async function AdminPage({ searchParams }: PageProps) {
             </div>
 
             {/* Estadísticas */}
-            <div className="border border-gray-200 rounded-lg p-4">
-              <h3 className="text-sm font-medium text-gray-500 mb-3">Estadísticas</h3>
-              <div className="space-y-2">
-                <p className="text-lg">
+            <div className="border border-gray-200 rounded-lg p-3 sm:p-4">
+              <h3 className="text-xs sm:text-sm font-medium text-gray-500 mb-2 sm:mb-3">Estadísticas</h3>
+              <div className="space-y-1 sm:space-y-2">
+                <p className="text-sm sm:text-lg">
                   <span className="font-semibold">Invitados:</span> {data.stats.totalGuests}
                 </p>
-                <p className="text-sm text-green-600">
+                <p className="text-xs sm:text-sm text-green-600">
                   ✓ Asisten: {data.stats.attendingGuests}
                 </p>
-                <p className="text-sm text-red-600">
+                <p className="text-xs sm:text-sm text-red-600">
                   ✗ No asisten: {data.stats.notAttendingGuests}
                 </p>
-                <p className="text-lg mt-3">
+                <p className="text-sm sm:text-lg mt-2 sm:mt-3">
                   <span className="font-semibold">Regalos:</span> {data.stats.totalGifts}
                 </p>
-                <p className="text-sm text-blue-600">
+                <p className="text-xs sm:text-sm text-blue-600">
                   Reservados: {data.stats.reservedGifts}
                 </p>
-                <p className="text-sm text-gray-600">
+                <p className="text-xs sm:text-sm text-gray-600">
                   Disponibles: {data.stats.availableGifts}
                 </p>
               </div>
@@ -160,17 +160,18 @@ export default async function AdminPage({ searchParams }: PageProps) {
         </div>
 
         {/* Sección 2: Lista de Invitados y Respuestas */}
-        <div className="bg-white rounded-lg shadow mb-8 p-6">
-          <h2 className="text-2xl font-semibold text-gray-900 mb-6">
+        <div className="bg-white rounded-lg shadow mb-4 sm:mb-8 p-3 sm:p-6">
+          <h2 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-4 sm:mb-6">
             Invitados y Respuestas ({data.stats.totalGuests} total)
           </h2>
 
           {/* Invitados que asisten */}
-          <div className="mb-8">
-            <h3 className="text-lg font-medium text-green-700 mb-4">
+          <div className="mb-6 sm:mb-8">
+            <h3 className="text-base sm:text-lg font-medium text-green-700 mb-3 sm:mb-4">
               ✓ Asisten ({data.stats.attendingGuests})
             </h3>
-            <div className="overflow-x-auto">
+            {/* Vista de tabla para desktop */}
+            <div className="hidden md:block overflow-x-auto">
               <table className="min-w-full divide-y divide-gray-200">
                 <thead className="bg-gray-50">
                   <tr>
@@ -219,14 +220,39 @@ export default async function AdminPage({ searchParams }: PageProps) {
                 </p>
               )}
             </div>
+            {/* Vista de cards para móvil */}
+            <div className="md:hidden space-y-3">
+              {attendingGuests.map((guest) => (
+                <div key={guest.id} className="border border-gray-200 rounded-lg p-3">
+                  <div className="font-medium text-gray-900 mb-1 text-sm">{guest.name}</div>
+                  <div className="text-xs text-gray-600 mb-2 break-all">{guest.email}</div>
+                  {guest.message && (
+                    <div className="text-xs text-gray-600 mb-2 italic">"{guest.message}"</div>
+                  )}
+                  {guest.reservation ? (
+                    <span className="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium bg-blue-100 text-blue-800">
+                      {guest.reservation.gift.name}
+                    </span>
+                  ) : (
+                    <span className="text-xs text-gray-400">Sin regalo</span>
+                  )}
+                </div>
+              ))}
+              {attendingGuests.length === 0 && (
+                <p className="text-center py-6 text-sm text-gray-500">
+                  No hay invitados que hayan confirmado asistencia
+                </p>
+              )}
+            </div>
           </div>
 
           {/* Invitados que no asisten */}
           <div>
-            <h3 className="text-lg font-medium text-red-700 mb-4">
+            <h3 className="text-base sm:text-lg font-medium text-red-700 mb-3 sm:mb-4">
               ✗ No Asisten ({data.stats.notAttendingGuests})
             </h3>
-            <div className="overflow-x-auto">
+            {/* Vista de tabla para desktop */}
+            <div className="hidden md:block overflow-x-auto">
               <table className="min-w-full divide-y divide-gray-200">
                 <thead className="bg-gray-50">
                   <tr>
@@ -263,15 +289,33 @@ export default async function AdminPage({ searchParams }: PageProps) {
                 </p>
               )}
             </div>
+            {/* Vista de cards para móvil */}
+            <div className="md:hidden space-y-3">
+              {notAttendingGuests.map((guest) => (
+                <div key={guest.id} className="border border-gray-200 rounded-lg p-3">
+                  <div className="font-medium text-gray-900 mb-1 text-sm">{guest.name}</div>
+                  <div className="text-xs text-gray-600 mb-2 break-all">{guest.email}</div>
+                  {guest.message && (
+                    <div className="text-xs text-gray-600 italic">"{guest.message}"</div>
+                  )}
+                </div>
+              ))}
+              {notAttendingGuests.length === 0 && (
+                <p className="text-center py-6 text-sm text-gray-500">
+                  No hay invitados que hayan declinado la invitación
+                </p>
+              )}
+            </div>
           </div>
         </div>
 
         {/* Sección 3: Regalos Seleccionados */}
-        <div className="bg-white rounded-lg shadow mb-8 p-6">
-          <h2 className="text-2xl font-semibold text-gray-900 mb-6">
+        <div className="bg-white rounded-lg shadow mb-4 sm:mb-8 p-3 sm:p-6">
+          <h2 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-4 sm:mb-6">
             Regalos Seleccionados ({data.stats.reservedGifts})
           </h2>
-          <div className="overflow-x-auto">
+          {/* Vista de tabla para desktop */}
+          <div className="hidden md:block overflow-x-auto">
             <table className="min-w-full divide-y divide-gray-200">
               <thead className="bg-gray-50">
                 <tr>
@@ -337,14 +381,50 @@ export default async function AdminPage({ searchParams }: PageProps) {
               </p>
             )}
           </div>
+          {/* Vista de cards para móvil */}
+          <div className="md:hidden space-y-3">
+            {selectedGifts.map(({ gift, reservations }) => (
+              <div key={gift.id} className="border border-gray-200 rounded-lg p-3">
+                <div className="font-medium text-gray-900 mb-2 text-sm">{gift.name}</div>
+                {gift.description && (
+                  <div className="text-xs text-gray-600 mb-2">{gift.description}</div>
+                )}
+                <div className="mb-2">
+                  <div className="text-xs font-medium text-gray-500 mb-1">Reservado por:</div>
+                  {reservations.map((reservation) => (
+                    <div key={reservation.id} className="text-xs text-gray-900 mb-1">
+                      <span className="font-medium">{reservation.guest.name}</span>
+                      <div className="text-gray-500 break-all">{reservation.guest.email}</div>
+                      <div className="text-gray-500">
+                        {format(new Date(reservation.createdAt), "d 'de' MMMM, yyyy", {
+                          locale: es,
+                        })}
+                      </div>
+                    </div>
+                  ))}
+                </div>
+                <div className="text-xs">
+                  <span className="font-medium">Stock: </span>
+                  <span className={reservations.length >= gift.stock ? 'text-red-600 font-medium' : ''}>
+                    {reservations.length} / {gift.stock}
+                  </span>
+                </div>
+              </div>
+            ))}
+            {selectedGifts.length === 0 && (
+              <p className="text-center py-6 text-sm text-gray-500">
+                No hay regalos seleccionados todavía
+              </p>
+            )}
+          </div>
         </div>
 
         {/* Sección 4: Regalos Pendientes */}
-        <div className="bg-white rounded-lg shadow mb-8 p-6">
-          <h2 className="text-2xl font-semibold text-gray-900 mb-6">
+        <div className="bg-white rounded-lg shadow mb-4 sm:mb-8 p-3 sm:p-6">
+          <h2 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-4 sm:mb-6">
             Regalos Pendientes ({data.stats.availableGifts})
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4">
             {pendingGifts.map((gift) => {
               const reservedCount = gift.reservations.length;
               const availableCount = gift.stock - reservedCount;
@@ -352,21 +432,21 @@ export default async function AdminPage({ searchParams }: PageProps) {
               return (
                 <div
                   key={gift.id}
-                  className="border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow"
+                  className="border border-gray-200 rounded-lg p-3 sm:p-4 hover:shadow-md transition-shadow"
                 >
                   {gift.image && (
                     <img
                       src={gift.image}
                       alt={gift.name}
-                      className="w-full h-32 object-cover rounded-md mb-3"
+                      className="w-full h-24 sm:h-32 object-cover rounded-md mb-2 sm:mb-3"
                     />
                   )}
-                  <h3 className="font-semibold text-gray-900 mb-2">{gift.name}</h3>
+                  <h3 className="font-semibold text-gray-900 mb-1 sm:mb-2 text-sm sm:text-base">{gift.name}</h3>
                   {gift.description && (
-                    <p className="text-sm text-gray-600 mb-3">{gift.description}</p>
+                    <p className="text-xs sm:text-sm text-gray-600 mb-2 sm:mb-3">{gift.description}</p>
                   )}
                   <div className="flex items-center justify-between">
-                    <span className="text-sm text-gray-500">
+                    <span className="text-xs sm:text-sm text-gray-500">
                       Disponible: {availableCount} / {gift.stock}
                     </span>
                     {gift.link && (
@@ -374,7 +454,7 @@ export default async function AdminPage({ searchParams }: PageProps) {
                         href={gift.link}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-sm text-blue-600 hover:underline"
+                        className="text-xs sm:text-sm text-blue-600 hover:underline"
                       >
                         Ver enlace
                       </a>
@@ -385,7 +465,7 @@ export default async function AdminPage({ searchParams }: PageProps) {
             })}
           </div>
           {pendingGifts.length === 0 && (
-            <p className="text-center py-8 text-gray-500">
+            <p className="text-center py-6 sm:py-8 text-sm sm:text-base text-gray-500">
               ¡Todos los regalos han sido seleccionados!
             </p>
           )}
