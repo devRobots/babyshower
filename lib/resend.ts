@@ -7,4 +7,9 @@ if (!process.env.RESEND_API_KEY) {
 export const resend = new Resend(process.env.RESEND_API_KEY);
 
 export const EMAIL_FROM = process.env.EMAIL_FROM || 'onboarding@resend.dev';
-export const PARENTS_EMAIL = process.env.PARENTS_EMAIL || 'parents@example.com';
+
+// Convert comma-separated email string to array for multiple recipients
+const parentsEmailEnv = process.env.PARENTS_EMAIL || 'parents@example.com';
+export const PARENTS_EMAIL = parentsEmailEnv.includes(',')
+  ? parentsEmailEnv.split(',').map(email => email.trim())
+  : parentsEmailEnv;
