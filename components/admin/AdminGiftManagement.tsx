@@ -98,9 +98,6 @@ export default function AdminGiftManagement({
                   Regalo
                 </th>
                 <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                  Descripción
-                </th>
-                <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
                   Stock
                 </th>
                 <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
@@ -123,9 +120,6 @@ export default function AdminGiftManagement({
                   <tr key={gift.id} className="hover:bg-gray-50">
                     <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
                       {gift.name}
-                    </td>
-                    <td className="px-6 py-4 text-sm text-gray-600 max-w-xs">
-                      {gift.description || '-'}
                     </td>
                     <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-600">
                       {gift.stock}
@@ -182,11 +176,6 @@ export default function AdminGiftManagement({
                 <div className="font-medium text-gray-900 mb-2 text-sm">
                   {gift.name}
                 </div>
-                {gift.description && (
-                  <div className="text-xs text-gray-600 mb-3">
-                    {gift.description}
-                  </div>
-                )}
                 <div className="grid grid-cols-3 gap-2 mb-3">
                   <div>
                     <div className="text-xs text-gray-500">Stock</div>
