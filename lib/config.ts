@@ -25,6 +25,9 @@ export interface Config {
       googleMapsUrl: string;
     };
   };
+  reminders: {
+    days: number[];
+  };
 }
 
 export function getConfig(): Config {

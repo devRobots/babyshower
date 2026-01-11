@@ -5,11 +5,11 @@ import { getConfig } from '@/lib/config';
 
 export async function GET(request: NextRequest) {
   try {
-    // Optional: Verify the request is from your cron service
-    // const authHeader = request.headers.get('authorization');
-    // if (authHeader !== `Bearer ${process.env.CRON_SECRET}`) {
-    //   return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
-    // }
+    // Verify the request is from your cron service
+    const authHeader = request.headers.get('authorization');
+    if (authHeader !== `Bearer ${process.env.CRON_SECRET}`) {
+      return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
+    }
 
     const config = getConfig();
     const eventDateISO = config.event.dateISO;
@@ -36,6 +36,16 @@ export async function GET(request: NextRequest) {
       return NextResponse.json({
         message: 'Event has passed or is today',
         daysUntilEvent
+      });
+    }
+
+    // Only send reminders on specific days before the event
+    const reminderDays = config.reminders.days;
+    if (!reminderDays.includes(daysUntilEvent)) {
+      return NextResponse.json({
+        message: `Not a reminder day. Reminders are sent ${reminderDays.join(', ')} days before the event.`,
+        daysUntilEvent,
+        nextReminderDay: reminderDays.find(day => day < daysUntilEvent)
       });
     }
 
