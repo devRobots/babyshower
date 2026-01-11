@@ -25,5 +25,5 @@ event:
 # 4. Configuración de Recordatorios
 reminders:
   # Días antes del evento en los que se enviarán recordatorios por email
-  # Ejemplo: [14, 7, 3, 1] enviará recordatorios 2 semanas, 1 semana, 3 días y 1 día antes
-  days: [14, 7, 3, 1]
+  # Ejemplo: [7, 1] enviará recordatorios 1 semana y 1 día antes
+  days: [7, 1]
