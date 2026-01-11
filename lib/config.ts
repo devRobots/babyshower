@@ -18,6 +18,7 @@ export interface Config {
   };
   event: {
     date: string;
+    dateISO: string;
     time: string;
     location: {
       address: string;
