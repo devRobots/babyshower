@@ -38,6 +38,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="es">
+      <Analytics />
       <body>
         {children}
         <hr className="w-full" />
