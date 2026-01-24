@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { getAdminData } from "@/actions/admin";
-import { getConfig } from "@/lib/config";
+import { getConfig } from "@/actions/config";
 import { format } from "date-fns";
 import { es } from "date-fns/locale";
 import AdminGiftManagement from "@/components/admin/AdminGiftManagement";
@@ -234,7 +234,7 @@ export default function AdminPage({ searchParams }: PageProps) {
                   <span className="font-semibold">Título:</span>{" "}
                   {config.seo.title}
                 </p>
-                <p className="text-xs sm:text-sm text-gray-600 break-words">
+                <p className="text-xs sm:text-sm text-gray-600 wrap-break-word">
                   {config.seo.description}
                 </p>
                 <a
