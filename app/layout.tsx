@@ -4,6 +4,7 @@ import Footer from "@components/Footer";
 
 import type { Metadata } from "next";
 import { getConfig } from "@lib/config";
+import { Analytics } from "@vercel/analytics/next"
 
 
 const { baby, seo } = getConfig();
