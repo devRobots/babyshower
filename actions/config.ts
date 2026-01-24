@@ -2,6 +2,6 @@
 
 import { getConfig as getConf } from '@/lib/config';
 
-export function getConfig() {
+export async function getConfig() {
   return getConf();
 }
